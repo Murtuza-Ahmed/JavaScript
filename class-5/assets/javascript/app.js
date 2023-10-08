@@ -35,3 +35,20 @@
 // let x = 5;
 // let y = "5";
 // console.log(x === y);
+
+// NOT EQUAL
+
+// let x = 5;
+// let y = "5";
+// console.log(x != y);
+// console.log(x !== y);
+
+// GREATHER THAN AND SMALLER THAN
+
+// let x = 15;
+// let y = 10;
+// console.log(x < y);
+// console.log(x <= y);
+
+// LOGICAL OPERATERS
+
