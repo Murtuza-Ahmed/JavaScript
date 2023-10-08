@@ -52,3 +52,17 @@
 
 // LOGICAL OPERATERS
 
+// let age = 17;
+// let gender = "male";
+// console.log(age > 18 && gender === "male");
+
+// OR OPERATERS
+
+// let age = 17;
+// let gender = "male";
+// console.log(age > 18 || gender === "male");
+
+// NOT OPERATERS
+
+// let x = false;
+// console.log(!x);
