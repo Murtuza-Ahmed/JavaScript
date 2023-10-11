@@ -135,5 +135,5 @@
 // let g = Math.floor(f)
 // console.log(g);
 
-let result = 3 + 4 * 2 / 8;
-console.log(result);
+// let result = 3 + 4 * 2 / 8;
+// console.log(result);
