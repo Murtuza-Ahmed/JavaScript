@@ -95,4 +95,45 @@
 // let hello = "Hello";
 // console.log(`${hello} ${firstName} ${lastName}`);
 
-var a = "World";
+// let userName = prompt("Enter Your Name");
+// const c = "Have a Nice Day";
+// const b = `Hello ${userName} ${c}`;
+// console.log(b);
+
+// let a = "Hello";
+// a = prompt("world");
+// console.log(a);
+
+// let a = 5;
+// let b = 70;
+// let c = "5";
+// b++;
+// console.log(b);
+
+// let z = 5;
+// let x = 70;
+// let v = "5";
+// let q = z++ + ++x - v;
+// console.log(q);
+
+// let w = 10;
+// let e = 30;
+// let d = "6";
+// let s = ++w + e++ * d;
+// console.log(s);
+
+// let a = 5;
+// let b = 70;
+// let c = "5";
+// let z = 5;
+// let x = 70;
+// let v = "5";
+// let w = 10;
+// let e = 30;
+// let d = "6";
+// let f = (a-- - b++) * c++ + ++z / ++x - v++ * (w++ * ++e) * d;
+// let g = Math.floor(f)
+// console.log(g);
+
+let result = 3 + 4 * 2 / 8;
+console.log(result);
