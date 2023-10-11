@@ -66,3 +66,33 @@
 
 // let x = false;
 // console.log(!x);
+
+// SUMMRY PRACTICE
+
+// let a = "Murtuza"
+// let c;
+// let b = null;
+// let num = 100;
+// let bigNum = 393878492002938n;
+// console.log(typeof a);
+// console.log(typeof c);
+// console.log(typeof b);
+// console.log(typeof num);
+// console.log(typeof bigNum);
+
+// NEW VALUE ASSIGMENT
+
+// var firstName = "Murtuza";
+// firstName = "Ahmed";
+// firstName = "Sheroz";
+// firstName = "Raza";
+// firstName = "Sheikh"
+// firstName = 100;
+// console.log(firstName);
+
+// let firstName = "Murtuza";
+// let lastName = "Ahmed";
+// let hello = "Hello";
+// console.log(`${hello} ${firstName} ${lastName}`);
+
+var a = "World";
