@@ -85,3 +85,7 @@
 // console.log(a < b && c <= d);
 // console.log(a < b || c === d);
 // console.log(c !== b);
+
+let miles = +prompt("Enter your Miles");
+let milesUpdate = miles * 1.60934;
+console.log(milesUpdate);
