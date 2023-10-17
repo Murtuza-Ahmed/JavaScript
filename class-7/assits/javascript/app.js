@@ -152,3 +152,12 @@
 
 // let multiMultipelArray = [[[1, 2, 3]], [[4, 5, 6]], [7, 8], [[[9, 10]]]];
 // console.log(multiMultipelArray);
+
+// let newArray = [1, 2, 3];
+// let newArray1 = [
+//     ["umer", 24, "abbas"],
+//     ["zubair,24,shamim"],
+//     ["hamza", 24, "arzoo"]
+// ];
+// console.log(newArray1[2]);
+// console.log(typeof newArray1);
