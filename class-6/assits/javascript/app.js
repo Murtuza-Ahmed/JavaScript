@@ -109,3 +109,10 @@
 
 // arr2 = new Array("Apple", "Banana", "Mango");
 // console.log(arr2);
+
+// let arr = ["Ahmed", 25, true,];
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(typeof arr[0]);
+// console.log(typeof arr[1]);
+// console.log(typeof arr[2]);
