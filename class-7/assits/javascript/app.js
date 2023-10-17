@@ -55,7 +55,7 @@
 // let arr = ["Black", "Red", "orange", "Blue"];
 // let arr1 = [true, false, false, true];
 // let arr2 = [];
-//arr.puch("Green", "White");
+// arr.push("Green", "White");
 // console.log(arr.length);
 // console.log(arr1.length);
 // console.log(arr2.length);
@@ -68,3 +68,11 @@
 // console.log(shopping.length);
 // shopping[1] = "Banana";
 // console.log(shopping);
+
+// let arrayName = ["Ahmed", 24, true];
+// arrayName.push("Murtuza");
+// console.log(arrayName);
+
+// let emptyArray = [];
+// emptyArray.push("Murtuza", "Ahmed", 25, true,);
+// console.log(emptyArray);
