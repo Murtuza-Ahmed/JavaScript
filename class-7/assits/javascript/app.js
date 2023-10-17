@@ -106,3 +106,13 @@
 // number.pop();
 // number.pop();
 // console.log(number);
+
+// let number = ["raza", "sheroz", "murtuza", 25, 90, "ahmed"];
+// number.shift();
+// number.shift();
+// number.unshift("circle", "squre");
+// console.log(number);
+
+let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numberArray.splice(0, 5);
+console.log(numberArray);
