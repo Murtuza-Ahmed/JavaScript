@@ -69,11 +69,19 @@
 // let b = 10;
 // console.log(a <= b);
 
-let z = 10;
-let x = 20;
-let c = 10;
-let d = 15;
-let a = 5;
-let b = 5;
-console.log(z >= x !== c && d <= a === b);
-console.log(z >= x !== c || d <= a === b);
+// let z = 10;
+// let x = 20;
+// let s = 10;
+// let n = 15;
+// let i = 5;
+// let m = 5;
+// console.log(z >= s !== i && m <= i === m);
+// console.log(m <= i === z);
+
+// let a = 10;
+// let b = 15;
+// let c = 10;
+// let d = 10;
+// console.log(a < b && c <= d);
+// console.log(a < b || c === d);
+// console.log(c !== b);
