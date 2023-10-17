@@ -46,3 +46,8 @@
 
 // people.friends.push(people1, people2, people3);
 // console.log(people);
+
+const arr = ["Ahmed", 25, true];
+arr[0] = "Murtuza";
+arr[2] = false;
+console.log(arr);
