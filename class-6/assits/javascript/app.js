@@ -103,3 +103,9 @@
 // let heightUpdate = height * 0.3048;
 // let BMI = weightUpdate / heightUpdate ** 2;
 // console.log(BMI);
+
+// arr1 = new Array("purple", "green", "yellow");
+// console.log(arr1);
+
+// arr2 = new Array("Apple", "Banana", "Mango");
+// console.log(arr2);
