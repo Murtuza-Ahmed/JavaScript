@@ -47,7 +47,24 @@
 // people.friends.push(people1, people2, people3);
 // console.log(people);
 
-const arr = ["Ahmed", 25, true];
-arr[0] = "Murtuza";
-arr[2] = false;
-console.log(arr);
+// const arr = ["Ahmed", 25, true];
+// arr[0] = "Murtuza";
+// arr[2] = false;
+// console.log(arr);
+
+// let arr = ["Black", "Red", "orange", "Blue"];
+// let arr1 = [true, false, false, true];
+// let arr2 = [];
+//arr.puch("Green", "White");
+// console.log(arr.length);
+// console.log(arr1.length);
+// console.log(arr2.length);
+
+// numbers = [12, 24, 36];
+// numbers[5] = 48;
+// console.log(numbers.length);
+
+// let shopping = ["Milk", "Bread", "Apples"];
+// console.log(shopping.length);
+// shopping[1] = "Banana";
+// console.log(shopping);
