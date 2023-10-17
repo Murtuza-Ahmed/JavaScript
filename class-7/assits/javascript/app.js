@@ -146,3 +146,9 @@
 // emptyShoppingArray.splice(1, 0, "carrots", "lettuce");
 // let newArr = ["jucies", "pop"];
 // console.log(emptyShoppingArray.concat(newArr));
+
+// let multipleArray = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10]];
+// console.log(multipleArray);
+
+// let multiMultipelArray = [[[1, 2, 3]], [[4, 5, 6]], [7, 8], [[[9, 10]]]];
+// console.log(multiMultipelArray);
