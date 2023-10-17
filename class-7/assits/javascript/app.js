@@ -76,3 +76,12 @@
 // let emptyArray = [];
 // emptyArray.push("Murtuza", "Ahmed", 25, true,);
 // console.log(emptyArray);
+
+// let array = ["Murtuza", true];
+// array.push(25);
+// console.log(array.length);
+
+let multipleArray = ["apple", "banana", "orange", "pineppill"];
+console.log(multipleArray.length);
+multipleArray.splice(0, 4, "murtuza", 24, "Ahmed", true);
+console.log(multipleArray);
