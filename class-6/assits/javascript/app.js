@@ -18,6 +18,11 @@
 // let sym1 = "javascript is fun";
 // console.log(sym === sym1);
 
-let sym = Symbol("javascript is fun");
-let sym1 = Symbol("javascript is fun");
-console.log(sym === sym1);
+// let sym = Symbol("javascript is fun");
+// let sym1 = Symbol("javascript is fun");
+// console.log(sym === sym1);
+
+// let value;
+
+// let value = null;
+// console.log(typeof value);
