@@ -81,7 +81,28 @@
 // array.push(25);
 // console.log(array.length);
 
-let multipleArray = ["apple", "banana", "orange", "pineppill"];
-console.log(multipleArray.length);
-multipleArray.splice(0, 4, "murtuza", 24, "Ahmed", true);
-console.log(multipleArray);
+// let multipleArray = ["apple", "banana", "orange", "pineppill"];
+// console.log(multipleArray.length);
+// multipleArray.splice(0, 4, "murtuza", 24, "Ahmed", true);
+// console.log(multipleArray);
+
+// let multipleArray = ["apple", "banana", "orange", "pineppill", "murtuza", 24, "Ahmed", true];
+// multipleArray.splice(0, 8, "circle", "tringle", "squre");
+// multipleArray.push("BMI");
+// console.log(multipleArray);
+// console.log(multipleArray.length);
+
+// let multipleArray = ["apple", "banana", "orange", "pineppill", "murtuza", 24, "Ahmed", true];
+// let array1 = [0, 8, "circle", "tringle", "squre"];
+// console.log(multipleArray.concat(array1));
+
+// let numberArray = [1, 2, 3, 4, 5];
+// let numArray = [6, 7, 8, 9, 10];
+// console.log(numberArray.concat(numArray));
+// console.log(numArray.concat(11, 12, 13));
+
+// let number = ["raza", "sheroz", "murtuza", 25, 90, "ahmed"];
+// number.push("anees");
+// number.pop();
+// number.pop();
+// console.log(number);
