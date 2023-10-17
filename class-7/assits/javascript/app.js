@@ -25,24 +25,24 @@
 // console.log(myCar.brand, myCar.model, myCar.forSale);
 
 
-let people = {
-    friends: []
-};
-let people1 = {
-    friends1: "zubair",
-    age: 24,
-    teacher: "SFIT"
-};
-let people2 = {
-    friends1: "umer",
-    age: 24,
-    teacher: "Tarbiyat"
-};
-let people3 = {
-    friends1: "Hamza",
-    age: 24,
-    teacher: "Hifz Quran"
-};
+// let people = {
+//     friends: []
+// };
+// let people1 = {
+//     friends1: "zubair",
+//     age: 24,
+//     teacher: "SFIT"
+// };
+// let people2 = {
+//     friends1: "umer",
+//     age: 24,
+//     teacher: "Tarbiyat"
+// };
+// let people3 = {
+//     friends1: "Hamza",
+//     age: 24,
+//     teacher: "Hifz Quran"
+// };
 
-people.friends.push(people1, people2, people3);
-console.log(people);
+// people.friends.push(people1, people2, people3);
+// console.log(people);
