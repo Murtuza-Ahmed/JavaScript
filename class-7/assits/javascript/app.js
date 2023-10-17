@@ -136,3 +136,13 @@
 // number.sort();
 // console.log(numberArray);
 // console.log(number);
+
+// let emptyShoppingArray = [];
+// emptyShoppingArray.push("Milk", "Bread", "Apple");
+// emptyShoppingArray.splice(1, 1, "banana", "egg");
+// emptyShoppingArray.pop();
+// emptyShoppingArray.sort();
+// console.log(emptyShoppingArray);
+// emptyShoppingArray.splice(1, 0, "carrots", "lettuce");
+// let newArr = ["jucies", "pop"];
+// console.log(emptyShoppingArray.concat(newArr));
