@@ -113,6 +113,26 @@
 // number.unshift("circle", "squre");
 // console.log(number);
 
-let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-numberArray.splice(0, 5);
-console.log(numberArray);
+// let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// numberArray.splice(0, 5);
+// console.log(numberArray);
+
+// arr8 = [2, 6, 7, 8];
+// let findValue = arr8.find(function (e) { return e === 6 });
+// let findValue2 = arr8.find(e => e === 10);
+// console.log(findValue);
+// console.log(findValue2);
+
+// let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let number = ["raza", "sheroz", "murtuza", 25, 90, "ahmed"];
+// let numFind = number.indexOf(2);
+// // let find = numberArray.indexOf(0);
+// // let find1 = numberArray.indexOf(9);
+// console.log(numFind);
+
+// let numberArray = [1, 4, 3, 2, 6, 5, 7, 10, 9, 0, 8];
+// let number = ["raza", "sheroz", "murtuza", 25, 90, "ahmed"];
+// numberArray.sort();
+// number.sort();
+// console.log(numberArray);
+// console.log(number);
