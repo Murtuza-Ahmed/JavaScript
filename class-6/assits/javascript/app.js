@@ -86,6 +86,20 @@
 // console.log(a < b || c === d);
 // console.log(c !== b);
 
-let miles = +prompt("Enter your Miles");
-let milesUpdate = miles * 1.60934;
-console.log(milesUpdate);
+// let miles = +prompt("Enter your Miles");
+// let milesUpdate = miles * 1.60934;
+// console.log(milesUpdate);
+
+// let weight = +prompt("Enter your Weight in KG", 0);
+// let height = +prompt("Enter your height in Feet", 0);
+// let weightUpdate = weight * 0.453592;
+// let heightUpdate = height * 2.54;
+// let BMI = weightUpdate / (heightUpdate / 100) * (heightUpdate / 100);
+// console.log(BMI);
+
+// let weight = +prompt("Enter your Weight in KG");
+// let height = +prompt("Enter yuor height in Feet");
+// let weightUpdate = weight * 2.20462;
+// let heightUpdate = height * 0.3048;
+// let BMI = weightUpdate / heightUpdate ** 2;
+// console.log(BMI);
