@@ -26,3 +26,41 @@
 
 // let value = null;
 // console.log(typeof value);
+
+// let firstName;
+// let lastName = null;
+// console.log(firstName === lastName);
+// console.log(typeof firstName);
+// console.log(typeof lastName);
+
+// let firstName = "Murtuza";
+// let lastName = "Ahmed";
+// console.log(firstName + lastName);
+
+// let a = "World";
+// let b = "Hello";
+// console.log(`${b} ${a}`);
+
+// let a = "Hello";
+// console.log(`${a} Murtuza`);
+
+// let a = 5;
+// let b = "5";
+// console.log(a !== b);
+// console.log(a === b);
+
+// let c = 10;
+// let d = 15;
+// console.log(c > d);
+
+// let z = 10;
+// let x = 20;
+// console.log(z < x);
+
+// let z = 10;
+// let x = 20;
+// let c = 10;
+// let d = 15;
+// let a = 5;
+// let b = 5;
+// console.log(z > x < c !== d === a === b);
