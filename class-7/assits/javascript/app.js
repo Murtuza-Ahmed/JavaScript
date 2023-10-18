@@ -242,3 +242,33 @@
 // address[1].state = "shiranwala road";
 // console.log(address);
 
+// const company = {
+//     companyName: "Healthy Candy",
+//     activities: [
+//         "food manufacturing", "manufacturing toys"
+//     ],
+//     address: [
+//         {
+//             street: "2nd street",
+//             number: 123,
+//             zipcode: 33116,
+//             city: "miami",
+//             state: "florida"
+//         },
+//         {
+//             street: "1st west",
+//             number: 321,
+//             zipcode: 6113,
+//             city: "Addison",
+//             state: "Texas"
+//         }
+//     ],
+//     yearOf: 2021
+// };
+// company.activities.splice(2, 0, "manufacturing dolls", "manufacturinf boys");
+// company.activities.unshift("toys");
+// company.address[1]["zipcode"] = 3310420;
+// company.address[0]["city"] = "los angeles";
+// company.address[0]["usa"] = "worldcup";
+// console.log(company);
+
