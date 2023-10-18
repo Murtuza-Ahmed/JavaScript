@@ -305,3 +305,44 @@
 // theList.splice(2, 2, "MIDDLE");
 // theList.push("LAST");
 // console.log(theList);
+
+// 1. Create an array to hold an inventory of store items.
+// const inventory = [];
+// const item1 = {
+//     name: "Widget",
+//     model: "W1",
+//     cost: 10.99,
+//     quantity: 50
+// };
+
+// const item2 = {
+//     name: "Gadget",
+//     model: "G2",
+//     cost: 29.99,
+//     quantity: 20
+// };
+
+// const item3 = {
+//     name: "Doodad",
+//     model: "D3",
+//     cost: 5.99,
+//     quantity: 100
+// }; 
+// inventory.push(item1, item2, item3);
+// console.log("Inventory:");
+// console.log(inventory);
+// console.log("Quantity of the third item:");
+// console.log(inventory[2].quantity);
+// const item4 = {
+//     name: "Thingamajig",
+//     model: "T4",
+//     cost: 15.99,
+//     quantity: 10
+// };
+
+// inventory.push(item4);
+
+// console.log("Updated Inventory:");
+// console.log(inventory);
+
+const inventoryComputerList = [];
