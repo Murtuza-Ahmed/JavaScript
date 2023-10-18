@@ -221,3 +221,24 @@
 // textile.activity.splice(1, 2, "Machine Work", "pyments");
 // textile.activity.pop();
 // console.log(textile);
+
+// let address = [
+//     {
+//         street: "2ndstreet",
+//         number: 3491,
+//         zipcode: 12390,
+//         city: "karachi",
+//         state: "orangi"
+//     },
+//     {
+//         street: "3rdstreet",
+//         number: 6543,
+//         zipcode: 7373,
+//         city: "lahore",
+//         state: "wagahborder"
+//     }
+// ];
+// address[0].city = "punjab";
+// address[1].state = "shiranwala road";
+// console.log(address);
+
