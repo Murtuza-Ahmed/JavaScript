@@ -161,3 +161,28 @@
 // ];
 // console.log(newArray1[2]);
 // console.log(typeof newArray1);
+
+// let myName = {
+//     firstName: "Murtuza",
+//     lastName: "Ahmed",
+//     age: 25,
+//     color: "Brown"
+// };
+// myName.age = 26;
+// myName["color"] = "green";
+// myName["lastName"] = "Raza";
+// myName.firstName = "Ahmed";
+// console.log(myName);
+
+let myCar = {
+    carName: "LandCrusior",
+    model: 2022,
+    brands: "Toyota",
+    ownerName: true
+};
+myCar["color"] = "Black";
+myCar["forSale"] = 1700000;
+myCar.prices = 1800000;
+console.log(myCar.model);
+console.log(myCar["brands"]);
+console.log(myCar.forSale);
