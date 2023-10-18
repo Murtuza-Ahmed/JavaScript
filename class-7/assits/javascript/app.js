@@ -296,3 +296,12 @@
 // named.friends[1]["lastName"] = "abdullah";
 // named.friends[1]["fatherName"] = "Arzoo";
 // console.log(named);
+
+// const theList = ["Murtuza", "Ahmed", true, 25, null, undefined];
+// theList.shift();
+// theList.pop();
+// theList.unshift("FIRST");
+// theList.splice(4, 2, "Hello World");
+// theList.splice(2, 2, "MIDDLE");
+// theList.push("LAST");
+// console.log(theList);
