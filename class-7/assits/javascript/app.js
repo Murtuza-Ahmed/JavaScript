@@ -345,35 +345,35 @@
 // console.log("Updated Inventory:");
 // console.log(inventory);
 
-const inventoryComputerList = [];
-let item1 = {
-    nameCP: "HP",
-    model: "CORE i5",
-    cost: 14000,
-    quantity: 15
-};
-let item2 = {
-    nameCP: "Dell",
-    model: "DUAL CORE",
-    cost: 10000,
-    quantity: 50
-};
-let item3 = {
-    nameCP: "Lenovo",
-    model: "CORE 2DU",
-    cost: 5000,
-    quantity: 100
-};
-inventoryComputerList.push(item1, item2, item3);
-console.log(inventoryComputerList);
-console.log(inventoryComputerList[2].quantity);
-console.log(inventoryComputerList[0].cost);
-let item4 = {
-    nameCP: "Computer",
-    model: "CORE i6",
-    cost: 20000,
-    quantity: 10
-};
-inventoryComputerList.push(item4);
-console.log(inventoryComputerList[3].model);
-console.log(inventoryComputerList.length);
+// const inventoryComputerList = [];
+// let item1 = {
+//     nameCP: "HP",
+//     model: "CORE i5",
+//     cost: 14000,
+//     quantity: 15
+// };
+// let item2 = {
+//     nameCP: "Dell",
+//     model: "DUAL CORE",
+//     cost: 10000,
+//     quantity: 50
+// };
+// let item3 = {
+//     nameCP: "Lenovo",
+//     model: "CORE 2DU",
+//     cost: 5000,
+//     quantity: 100
+// };
+// inventoryComputerList.push(item1, item2, item3);
+// console.log(inventoryComputerList);
+// console.log(inventoryComputerList[2].quantity);
+// console.log(inventoryComputerList[0].cost);
+// let item4 = {
+//     nameCP: "Computer",
+//     model: "CORE i6",
+//     cost: 20000,
+//     quantity: 10
+// };
+// inventoryComputerList.push(item4);
+// console.log(inventoryComputerList[3].model);
+// console.log(inventoryComputerList.length);
