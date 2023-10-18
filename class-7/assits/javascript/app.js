@@ -272,3 +272,27 @@
 // company.address[0]["usa"] = "worldcup";
 // console.log(company);
 
+// let named = {
+//     friends: []
+// };
+
+// let umer = {
+//     firstName: "umer",
+//     lastName: "Raza",
+//     ID: 234
+// };
+// let hamza = {
+//     firstName: "hamza",
+//     lastName: "Ahmed",
+//     ID: 432
+// };
+// let zubair = {
+//     firstName: "zubair",
+//     lastName: "sheikh",
+//     ID: 654
+// };
+
+// named.friends.push(umer, hamza, zubair);
+// named.friends[1]["lastName"] = "abdullah";
+// named.friends[1]["fatherName"] = "Arzoo";
+// console.log(named);
