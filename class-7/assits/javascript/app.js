@@ -174,15 +174,50 @@
 // myName.firstName = "Ahmed";
 // console.log(myName);
 
-let myCar = {
-    carName: "LandCrusior",
-    model: 2022,
-    brands: "Toyota",
-    ownerName: true
-};
-myCar["color"] = "Black";
-myCar["forSale"] = 1700000;
-myCar.prices = 1800000;
-console.log(myCar.model);
-console.log(myCar["brands"]);
-console.log(myCar.forSale);
+// let myCar = {
+//     carName: "LandCrusior",
+//     model: 2022,
+//     brands: "Toyota",
+//     ownerName: true
+// };
+// myCar["color"] = "Black";
+// myCar["forSale"] = 1700000;
+// myCar.prices = 1800000;
+// console.log(myCar.model);
+// console.log(myCar["brands"]);
+// console.log(myCar.forSale);
+
+// let company = {
+//     companyName: "A.M Textile",
+//     activity: "Machine Work",
+//     address: {
+//         street: "2nd street",
+//         number: 123,
+//         zipCode: 3310,
+//         city: "karachi",
+//         state: "orangi"
+//     },
+//     yearOf: 2021
+// };
+// company["address"]["zipCode"] = 1033;
+// company.address.zipCode = 123;
+// console.log(company);
+
+// let textile = {
+//     company: "Mector",
+//     activity: ["Madicane", "Fiver Srinj", "Veeks"],
+//     address: {
+//         street: "3rd streeet",
+//         number: 9876,
+//         zipcode: 5436,
+//         city: "karachi",
+//         state: true
+//     },
+//     years: 1945
+// };
+
+// textile.activity[2] = "Baam";
+// textile.activity.push("veeks");
+// textile.activity.splice(1, 2, "Machine Work", "pyments");
+// textile.activity.pop();
+// console.log(textile);
