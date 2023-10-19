@@ -19,3 +19,10 @@
 //     message = "OK";
 // }
 // console.log(userNumber);
+
+let rain = true;
+if (rain) {
+    console.log("Taking my Umbrella whem I need To go site");
+} else {
+    console.log("I can live umbrella at Home");
+}
