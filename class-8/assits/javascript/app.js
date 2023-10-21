@@ -26,3 +26,19 @@
 // } else {
 //     console.log("I can live umbrella at Home");
 // }
+
+// let rain = true;
+// if (rain) {
+//     console.log("Open the Umbrella");
+// } else {
+//     console.log("Close the Umbrella");
+// }
+// console.log(rain);
+
+// let rain = true;
+// if (rain) {
+//     console.log("Open the Umbrella");
+// } else {
+//     console.log("Close the umbrella");
+// }
+
