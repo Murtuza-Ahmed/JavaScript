@@ -42,3 +42,18 @@
 //     console.log("Close the umbrella");
 // }
 
+// let age = 18;
+// if (age < 18) {
+//     console.log("Sorry under the age 18");
+// } else {
+//     console.log("WellCome");
+// }
+
+let age = +prompt("Enter the Number");
+console.log(typeof age);
+let ageRequirment = 18;
+if (age === ageRequirment >= 18) {
+    console.log("WellCome");
+} else {
+    console.log("Sorry Under the age 18 NO ENTRY");
+}
