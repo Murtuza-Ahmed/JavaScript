@@ -125,3 +125,14 @@
 // }
 // console.log(message);
 // console.log(`Your total cost ${cost}`);
+
+// let userAge = parseInt(prompt("Enter the AGE"));
+// let message;
+// if (userAge >= 21) {
+//     message = "Venue ability to purchase Alcohol";
+// } else if (userAge >= 19) {
+//     message = "Venue deny the purchase alchohol";
+// } else {
+//     message = "deny entry";
+// }
+// console.log(message);
