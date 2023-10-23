@@ -146,3 +146,8 @@
 // let message;
 // age <= 18 ? message = "No Entry" : message = "WellCome";
 // console.log(message); 
+
+// let validId = true;
+// let message;
+// validId ? message = "Venue" : message = "Not";
+// console.log(message);
