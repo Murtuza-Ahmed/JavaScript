@@ -88,3 +88,18 @@
 // } else {
 //     console.log("WellCome");
 // }
+
+// let hobby = "coding";
+// if (hobby === "dancing") {
+//     console.log("I BAD No Dancing");
+// } else {
+//     console.log("I LOVE Coding");
+// }
+
+// let bike = true;
+// console.log(bike);
+// if (bike) {
+//     console.log("HONDA is true");
+// } if (!bike) {
+//     console.log("SUZUKI is false");
+// }
