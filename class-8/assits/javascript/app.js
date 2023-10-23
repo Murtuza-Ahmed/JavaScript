@@ -104,24 +104,24 @@
 //     console.log("SUZUKI is false");
 // }
 
-let age = parseInt(prompt("Enter the AGE"));
-let cost = 0;
-let message;
-if (age < 3) {
-    cost = 0;
-    message = "Aceess is free under THREE!";
-} else if (age >= 3 && age < 12) {
-    cost = 3;
-    message = "with the child discount in fee 5 dollars";
-} else if (age >= 12 && age < 20) {
-    cost = 5;
-    message = "a ragullar ticket 10 dollars";
-} else if (age >= 20 && age < 30) {
-    cost = 7;
-    message = "a ticket is 7 dollar";
-} else {
-    cost = 10;
-    message = "a ragullar ticket";
-}
-console.log(message);
-console.log(`Your total cost ${cost}`);
+// let age = parseInt(prompt("Enter the AGE"));
+// let cost = 0;
+// let message;
+// if (age < 3) {
+//     cost = 0;
+//     message = "Aceess is free under THREE!";
+// } else if (age >= 3 && age < 12) {
+//     cost = 3;
+//     message = "with the child discount in fee 5 dollars";
+// } else if (age >= 12 && age < 20) {
+//     cost = 5;
+//     message = "a ragullar ticket 10 dollars";
+// } else if (age >= 20 && age < 30) {
+//     cost = 7;
+//     message = "a ticket is 7 dollar";
+// } else {
+//     cost = 10;
+//     message = "a ragullar ticket";
+// }
+// console.log(message);
+// console.log(`Your total cost ${cost}`);
