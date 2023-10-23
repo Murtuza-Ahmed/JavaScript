@@ -136,3 +136,13 @@
 //     message = "deny entry";
 // }
 // console.log(message);
+
+
+// let age = 17;
+// let access = age < 18 ? "denied" : "allowed";
+// console.log(access);
+
+// let age = +prompt("Enter the AGE");
+// let message;
+// age <= 18 ? message = "No Entry" : message = "WellCome";
+// console.log(message); 
