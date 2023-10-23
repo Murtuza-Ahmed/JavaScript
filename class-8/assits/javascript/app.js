@@ -58,3 +58,17 @@
 //     console.log("Sorry Under the age 18 NO ENTRY");
 // }
 
+// let rain = false;
+// if (rain) {
+//     console.log("Open the UMBRELLA");
+// } else {
+//     console.log("Close the UMBRELLA");
+// }
+
+// let rain = prompt("Enter the TRUE / FALSE");
+// if (rain === true) {
+//     console.log("Open the UMBRELLA");
+// } else {
+//     console.log("Close the UMBRELLA");
+// }
+
