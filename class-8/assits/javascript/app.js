@@ -72,3 +72,19 @@
 //     console.log("Close the UMBRELLA");
 // }
 
+// let age = 17;
+// if (age <= 18) {
+//     console.log("Under the Age 18 NO Entry");
+// } else {
+//     console.log("WellCome");
+// }
+
+// let age = +prompt("Enter the AGE");
+// // let message;
+// if (age <= 18) {
+//     console.log("Under the Age 18 NO Entry");
+// } else if (age > 30) {
+//     console.log("Your old NO Entry");
+// } else {
+//     console.log("WellCome");
+// }
