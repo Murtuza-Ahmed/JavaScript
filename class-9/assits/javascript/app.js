@@ -74,7 +74,7 @@
 // console.log(`${message1} ${userInput} ${message} ${floorNumber}`);
 
 // Step 1: Generate a random number between 0 and 5
-var randomNumber = Math.floor(Math.random() * 6);
+// var randomNumber = Math.floor(Math.random() * 6);
 
 // Step 2: Get user input using a prompt
 // var userQuestion = prompt("Ask a question:");
@@ -110,3 +110,15 @@ var randomNumber = Math.floor(Math.random() * 6);
 
 // // Step 5: Output the original question and the response to the console
 // console.log(finalResponse);
+
+let userInput = +prompt("Enter the NUMBER", 0);
+let randomNumber = Math.random() * 10;
+randomNumber = Math.floor(randomNumber);
+let response;
+if (userInput === randomNumber) {
+    response = "you win";
+} else {
+    response = "you lose";
+}
+let finalResponse = `Genrate the Number ${randomNumber} ${response} Your Number ${userInput}`;
+console.log(finalResponse);
