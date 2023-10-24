@@ -142,3 +142,17 @@
 // }
 // let finalGrade = `Your MARKS ${grade} ${response}`;
 // console.log(finalGrade);
+
+// let grade = prompt("Enter GRADE");
+// if (grade === "A") {
+//     console.log("Your Excellent");
+// } else if (grade === "B" || grade === "C") {
+//     console.log("Your Passed");
+// } else if (grade === "D" || grade === "E") {
+//     console.log("Your Promote");
+// } else if (grade === "F") {
+//     console.log("Your Field");
+// } else {
+//     console.log("Enter Grade");
+// }
+// console.log(grade);
