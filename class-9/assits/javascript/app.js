@@ -111,14 +111,34 @@
 // // Step 5: Output the original question and the response to the console
 // console.log(finalResponse);
 
-let userInput = +prompt("Enter the NUMBER", 0);
-let randomNumber = Math.random() * 10;
-randomNumber = Math.floor(randomNumber);
-let response;
-if (userInput === randomNumber) {
-    response = "you win";
-} else {
-    response = "you lose";
-}
-let finalResponse = `Genrate the Number ${randomNumber} ${response} Your Number ${userInput}`;
-console.log(finalResponse);
+// let userInput = +prompt("Enter the NUMBER", 0);
+// let randomNumber = Math.random() * 10;
+// randomNumber = Math.floor(randomNumber);
+// let response;
+// if (userInput === randomNumber) {
+//     response = "you win";
+// } else {
+//     response = "you lose";
+// }
+// let finalResponse = `Genrate the Number ${randomNumber} ${response} Your Number ${userInput}`;
+// console.log(finalResponse);
+
+// let grade = prompt("Enter GRADE");
+// let response;
+// switch (grade) {
+//     case "F":
+//     case "D":
+//         response = "You'v Field";
+//         break;
+//     case "C":
+//     case "B":
+//         response = "PASSED";
+//         break;
+//     case "A":
+//         response = "EXCELLENT";
+//         break;
+//     default:
+//         response = "NO ENTRY";
+// }
+// let finalGrade = `Your MARKS ${grade} ${response}`;
+// console.log(finalGrade);
