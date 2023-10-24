@@ -40,3 +40,73 @@
 //         console.log("no but try");
 // }
 // console.log(activity);
+
+// let randomNumber = Math.floor(Math.random() * 10);
+// console.log(randomNumber);
+
+// let randomNumber = Math.random() * 10;
+// floorNumber = Math.floor(randomNumber);
+// let userInput = prompt("Ask me any Thing");
+// let message;
+// let message1 = "So WellCome";
+// switch (floorNumber) {
+//     case 0:
+//         message = "you loser";
+//         break;
+//     case 2:
+//         message = "you lose";
+//         break;
+//     case 3:
+//         message = "you loss";
+//         break;
+//     case 4:
+//         message = "you won";
+//         break;
+//     case 5:
+//         message = "you win";
+//         break;
+//     case 6:
+//         message = "excellent";
+//         break;
+//     default:
+//         message = "losser no entry";
+// }
+// console.log(`${message1} ${userInput} ${message} ${floorNumber}`);
+
+// Step 1: Generate a random number between 0 and 5
+var randomNumber = Math.floor(Math.random() * 6);
+
+// Step 2: Get user input using a prompt
+// var userQuestion = prompt("Ask a question:");
+
+// // Step 3: Create 6 responses using a switch statement
+// var response;
+// switch (randomNumber) {
+//   case 0:
+//     response = "It is certain.";
+//     break;
+//   case 1:
+//     response = "Reply hazy, try again.";
+//     break;
+//   case 2:
+//     response = "Don't count on it.";
+//     break;
+//   case 3:
+//     response = "Outlook not so good.";
+//     break;
+//   case 4:
+//     response = "Signs point to yes.";
+//     break;
+//   case 5:
+//     response = "My sources say no.";
+//     break;
+//   default:
+//     response = "Sorry, I can't answer that.";
+//     break;
+// }
+
+// // Step 4: Create the final response
+// var finalResponse = "You asked: " + userQuestion + "\nMagic 8-Ball says: " + response;
+
+// // Step 5: Output the original question and the response to the console
+// console.log(finalResponse);
