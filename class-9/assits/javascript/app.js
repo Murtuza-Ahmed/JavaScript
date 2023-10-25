@@ -156,3 +156,93 @@
 //     console.log("Enter Grade");
 // }
 // console.log(grade);
+
+// let prize;
+// let userChoice = prompt("Apna inam darj karen, 0 se 10 ke darmiyan ek number chunen:");
+// userChoice = parseInt(userChoice);
+// let outputMessage = "Meri Intikhab: ";
+// switch (userChoice) {
+//     case 0:
+//         prize = "Kuch nahi, kismat phir se azmao!";
+//         break;
+//     case 1:
+//         prize = "Choti inaam: Ek chota toffee milega.";
+//         break;
+//     case 2:
+//         prize = "Choti inaam: Ek chocolate bar milega.";
+//         break;
+//     case 3:
+//         prize = "Choti inaam: Ek pensil set milega.";
+//         break;
+//     case 4:
+//         prize = "Bada inaam: Ek coloring book milega.";
+//         break;
+//     case 5:
+//         prize = "Bada inaam: Ek board game milega.";
+//         break;
+//     case 6:
+//         prize = "Bada inaam: Ek remote control car milega.";
+//         break;
+//     case 7:
+//         prize = "Bada inaam: Ek bicycle milegi.";
+//         break;
+//     case 8:
+//         prize = "Bada inaam: Ek video game console milega.";
+//         break;
+//     case 9:
+//         prize = "Bada inaam: Ek laptop milega.";
+//         break;
+//     case 10:
+//         prize = "Jitna bada inaam: Ek luxury vacation for two milega!";
+//         break;
+//     default:
+//         prize = "Kuch nahi, kismat phir se azmao!";
+// }
+// console.log(outputMessage + prize);
+
+
+
+// let prize = parseInt(prompt("Enter the Number 0 OR 10"));
+// let outPut = "Apka INAM: ";
+// let message;
+// switch (prize) {
+//     case 0:
+//         message = "Khali, Phir Se Kosish Karen";
+//         console.log("khali");
+//         break;
+//     case 1:
+//         message = "Ek DaryMilk Cocolate Mile Ga";
+//         break;
+//     case 2:
+//         message = "Ek Fanta Ka Bottle Mile Ga";
+//         break;
+//     case 3:
+//         message = "Ek Cocolate Ka Dabba Mile Ga";
+//         break;
+//     case 4:
+//         message = "Ek Senima Ticket Mile Ga";
+//         break;
+//     case 5:
+//         message = "Apko Shadi Kylye Ek Larki Mile Gi";
+//         break;
+//     case 6:
+//         message = "Ek Pancil Box OR Geometry Box Mile Ga";
+//         break;
+//     case 7:
+//         message = "Ek Mheran Car Mile Ga";
+//         break;
+//     case 8:
+//         message = "Ek Flat Mile Ga";
+//         break;
+//     case 9:
+//         message = "Khali, Apni Qismat Phir se Azmayen";
+//         break;
+//     case 10:
+//         message = "Apka LandCrusior Nikla He, Khawab Me";
+//         break;
+//     default:
+//         message = "Phit Se Kosish Karen";
+//         break;
+// }
+// let finalPrize = `${outPut} ${message}`;
+// console.log(finalPrize);
