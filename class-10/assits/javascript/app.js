@@ -10,17 +10,24 @@
 //     a--;
 // }
 
-let i = 10;
-let randomNumber = Math.floor(Math.random() * i) + 1;
-console.log(randomNumber);
-let answer = true;
-while (answer) {
-    let userInput = parseFloat(prompt("Gases the Number"));
-    if (userInput === randomNumber) {
-        console.log("Excllent");
-        answer = false;
-    } else {
-        console.log("Try Again");
-        answer = false;
-    }
-}
+// let i = 10;
+// let randomNumber = Math.floor(Math.random() * i) + 1;
+// console.log(randomNumber);
+// let answer = true;
+// while (answer) {
+//     let userInput = parseFloat(prompt("Gases the Number"));
+//     if (userInput === randomNumber) {
+//         console.log("Excllent");
+//         answer = false;
+//     } else {
+//         console.log("Try Again");
+//         answer = false;
+//     }
+// }
+
+let i = 0;
+let step = 5;
+do {
+    console.log("hello" + i);
+    i += step;
+} while (i < 100);
