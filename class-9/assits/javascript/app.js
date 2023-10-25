@@ -246,3 +246,15 @@
 // }
 // let finalPrize = `${outPut} ${message}`;
 // console.log(finalPrize);
+
+// let userNumber = parseFloat(prompt("Enter the Number"));
+// let dynamicNumber = Math.floor(Math.random() * 100) + 1;
+// let response;
+// if (userNumber > dynamicNumber) {
+//     response = "Apka Number Code Ke Number Se Bara He";
+// } else if (userNumber < dynamicNumber) {
+//     response = "Apka Number Code Ke Number Se Chota He";
+// } else {
+//     response = "Apka Number Code Ke Number Ke Bara Bar He";
+// }
+// console.log(response);
