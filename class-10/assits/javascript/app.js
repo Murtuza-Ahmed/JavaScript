@@ -31,3 +31,22 @@
 //     console.log("hello" + i);
 //     i += step;
 // } while (i < 100);
+
+// function getFullDate(...parameters) {
+//     let getting, lengthArgs = parameters.length;
+//     if (lengthArgs >= 2 || lengthArgs <= 7) {
+//         getting = new Date(...parameters);
+//         return getting.getTime();
+//     } else if (lengthArgs === 1) {
+//         let num = Number(parameters)
+//         getting = new Date(num);
+//         return getting.toString();
+//     } else {
+//         const CD = new Date();
+//         let fullDate = `${CD.getFullYear()}-${CD.getMonth()}-${CD.getDate()}`;
+//         return fullDate
+//     }
+// }
+// console.log(getFullDate(2023, 6, 20, 10));
+// console.log(getFullDate(372648725323));
+// console.log(getFullDate());
