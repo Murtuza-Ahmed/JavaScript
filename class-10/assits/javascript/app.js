@@ -25,9 +25,9 @@
 //     }
 // }
 
-let i = 0;
-let step = 5;
-do {
-    console.log("hello" + i);
-    i += step;
-} while (i < 100);
+// let i = 0;
+// let step = 5;
+// do {
+//     console.log("hello" + i);
+//     i += step;
+// } while (i < 100);
