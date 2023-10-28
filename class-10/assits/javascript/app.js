@@ -17,7 +17,7 @@
 // while (answer) {
 //     let userInput = parseFloat(prompt("Gases the Number"));
 //     if (userInput === randomNumber) {
-//         console.log("Excllent");
+//         console.log("poor");
 //         answer = false;
 //     } else {
 //         console.log("Try Again");
