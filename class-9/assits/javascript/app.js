@@ -200,8 +200,6 @@
 // }
 // console.log(outputMessage + prize);
 
-
-
 // let prize = parseInt(prompt("Enter the Number 0 OR 10"));
 // let outPut = "Apka INAM: ";
 // let message;
@@ -258,3 +256,18 @@
 //     response = "Apka Number Code Ke Number Ke Bara Bar He";
 // }
 // console.log(response);
+
+let userInput = parseInt(prompt("Enter the Number 1 OR 100"));
+let dynamicNumber = Math.floor(Math.random() * 100) + 1;
+let message;
+if (userInput < dynamicNumber) {
+  message = "Apka Number is Number se Chota he";
+} else if (userInput === dynamicNumber) {
+  message = "Apka Number is Number se Baara Bar He";
+} else if (userInput > dynamicNumber) {
+  message = "Apka Number is Number se Baara He";
+} else {
+  message = "Apka Number Kisi Bi Number se Match Nahi He";
+}
+let finalInput = `UserNumber ${userInput} ${message} ComputerNumber ${dynamicNumber}`;
+console.log(finalInput);
