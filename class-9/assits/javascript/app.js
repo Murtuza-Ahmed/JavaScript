@@ -267,7 +267,7 @@ if (userInput < dynamicNumber) {
 } else if (userInput > dynamicNumber) {
   message = "Apka Number is Number se Baara He";
 } else {
-  message = "Apka Number Kisi Bi Number se Match Nahi He";
+  message = "Apka Number Kisi Bi Number se Match Nahi karta";
 }
 let finalInput = `UserNumber ${userInput} ${message} ComputerNumber ${dynamicNumber}`;
 console.log(finalInput);
