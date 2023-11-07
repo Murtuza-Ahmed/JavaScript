@@ -257,17 +257,34 @@
 // }
 // console.log(response);
 
-let userInput = parseInt(prompt("Enter the Number 1 OR 100"));
-let dynamicNumber = Math.floor(Math.random() * 100) + 1;
+// let userInput = parseInt(prompt("Enter the Number 1 OR 100"));
+// let dynamicNumber = Math.floor(Math.random() * 100) + 1;
+// let message;
+// if (userInput < dynamicNumber) {
+//   message = "Apka Number is Number se Chota he";
+// } else if (userInput === dynamicNumber) {
+//   message = "Apka Number is Number se Baara Bar He";
+// } else if (userInput > dynamicNumber) {
+//   message = "Apka Number is Number se Baara He";
+// } else {
+//   message = "Apka Number Kisi Bi Number se Match Nahi karta";
+// }
+// let finalInput = `UserNumber ${userInput} ${message} ComputerNumber ${dynamicNumber}`;
+// console.log(finalInput);
+
+// let idValue = false;
+// let valueCheck = idValue ? "ID is OK" : "ID is not OK";
+// console.log(valueCheck);
+
+let randomNumber = Math.random();
+randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
+let userInput = prompt("Enter your 8-Ball Choice");
 let message;
-if (userInput < dynamicNumber) {
-  message = "Apka Number is Number se Chota he";
-} else if (userInput === dynamicNumber) {
-  message = "Apka Number is Number se Baara Bar He";
-} else if (userInput > dynamicNumber) {
-  message = "Apka Number is Number se Baara He";
-} else {
-  message = "Apka Number Kisi Bi Number se Match Nahi karta";
+switch(randomNumber){
+  case 0:
+    message="Khali he Phir se kosish karen";
+    break;
+    case 1:
+      
 }
-let finalInput = `UserNumber ${userInput} ${message} ComputerNumber ${dynamicNumber}`;
-console.log(finalInput);
