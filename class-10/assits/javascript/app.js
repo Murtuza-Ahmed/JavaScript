@@ -90,3 +90,18 @@
 //   response = "Correct The GRADE";
 // }
 // console.log(response);
+
+// Define a dynamic number (you can change this value as needed)
+// const dynamicNumber = 50;
+// const userInput = prompt("Enter a number:");
+// const userNumber = parseFloat(userInput);
+// if (isNaN(userNumber)) {
+//   console.log(Boolean(isNaN(userNumber)));
+//   console.log("Invalid input. Please enter a valid number.");
+// } else if (userNumber > dynamicNumber) {
+//   console.log("The entered number is greater than the dynamic number.");
+// } else if (userNumber < dynamicNumber) {
+//   console.log("The entered number is less than the dynamic number.");
+// } else {
+//   console.log("The entered number is equal to the dynamic number.");
+// }
