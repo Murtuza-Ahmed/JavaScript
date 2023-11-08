@@ -306,6 +306,6 @@
 // let finalAnswer = `Computer Generate Number ${randomNumber} Apki Choice ${userInput} Apka Inama ${message}`;
 // console.log(finalAnswer);
 
-let listName = prompt("Enter Name");
-let low = listName.toLocaleLowerCase();
-console.log(low);
+// let listName = prompt("Enter Name");
+// let low = listName.toLocaleLowerCase();
+// console.log(low);
