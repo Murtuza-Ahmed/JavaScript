@@ -277,14 +277,31 @@
 // console.log(valueCheck);
 
 let randomNumber = Math.random();
-randomNumber = Math.floor(Math.random() * 10);
-console.log(randomNumber);
+randomNumber = Math.floor(Math.random() * 10) + 1;
+// console.log(randomNumber);
 let userInput = prompt("Enter your 8-Ball Choice");
 let message;
-switch(randomNumber){
-  case 0:
-    message="Khali he Phir se kosish karen";
+switch (randomNumber) {
+  case 1:
+    message = "Mubarak Ho Apne 500 Cash Jita He";
     break;
-    case 1:
-      
+  case 2:
+    message = "Mubarak Ho Apne 1000 Cash Jita He";
+    break;
+  case 3:
+    message = "Mubarak Ho Apne 1500 Cash Jita He";
+    break;
+  case 4:
+    message = "Mubarak Ho Apne 2000 Cash Jita He";
+    break;
+  case 5:
+    message = "Mubarak Ho Apne 2500 Cash Jita He";
+    break;
+  case 6:
+    message = "Mubarak Ho Apne 1 ApartMent Jita He";
+    break;
+  default:
+    message = "Khali Phir Se Kosish Karen";
 }
+let finalAnswer = `Computer Generate Number ${randomNumber} Apki Choice ${userInput} Apka Inama ${message}`;
+console.log(finalAnswer);
