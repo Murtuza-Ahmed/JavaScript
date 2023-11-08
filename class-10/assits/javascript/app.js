@@ -119,3 +119,21 @@
 //   message = "Apka Number BaraBar He";
 // }
 // console.log(message);
+
+// let userFriend = prompt("Enter The Friend");
+// let lowUserFriend = userFriend.toLowerCase();
+// let response;
+// switch (lowUserFriend) {
+//   case "hamza":
+//     response = "Hamza Dost He";
+//     break;
+//   case "umer":
+//     response = "Umer Dost He";
+//     break;
+//   case "zubair":
+//     response = "Zubair Dost He";
+//     break;
+//   default:
+//     response = "Koi Dost Nai He";
+// }
+// console.log(response);
