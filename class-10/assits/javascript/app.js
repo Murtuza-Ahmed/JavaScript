@@ -120,20 +120,27 @@
 // }
 // console.log(message);
 
-// let userFriend = prompt("Enter The Friend");
-// let lowUserFriend = userFriend.toLowerCase();
-// let response;
-// switch (lowUserFriend) {
-//   case "hamza":
-//     response = "Hamza Dost He";
-//     break;
-//   case "umer":
-//     response = "Umer Dost He";
-//     break;
-//   case "zubair":
-//     response = "Zubair Dost He";
-//     break;
-//   default:
-//     response = "Koi Dost Nai He";
-// }
-// console.log(response);
+let userFriend = prompt("Enter The Friend");
+let lowUserFriend = userFriend.toLowerCase();
+let response;
+switch (lowUserFriend) {
+  case "hamza":
+    response = true;
+    break;
+  case "umer":
+    response = true;
+    break;
+  case "zubair":
+    response = true;
+    break;
+  case "raza":
+    response = true;
+    break;
+  default:
+    response = false;
+}
+if (response) {
+  console.log("Your Friend");
+} else {
+  console.log("I Don't Know");
+}
