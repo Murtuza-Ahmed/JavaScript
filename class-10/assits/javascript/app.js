@@ -50,3 +50,27 @@
 // console.log(getFullDate(2023, 6, 20, 10));
 // console.log(getFullDate(372648725323));
 // console.log(getFullDate());
+
+let grade = prompt("Enter The Grade");
+let lowGrade = grade.toLowerCase();
+let message;
+switch (lowGrade) {
+  case "a":
+    message = "Superb";
+    break;
+  case "b":
+  case "c":
+    message = "Your Passed";
+    break;
+  case "d":
+  case "e":
+    message = "Promotte";
+    break;
+  case "f":
+    message = "Your Field";
+    break;
+  default:
+    message = "Correct The Grade";
+}
+let finalResult = message;
+console.log(finalResult);
