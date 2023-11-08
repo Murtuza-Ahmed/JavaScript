@@ -51,26 +51,42 @@
 // console.log(getFullDate(372648725323));
 // console.log(getFullDate());
 
-let grade = prompt("Enter The Grade");
-let lowGrade = grade.toLowerCase();
-let message;
-switch (lowGrade) {
-  case "a":
-    message = "Superb";
-    break;
-  case "b":
-  case "c":
-    message = "Your Passed";
-    break;
-  case "d":
-  case "e":
-    message = "Promotte";
-    break;
-  case "f":
-    message = "Your Field";
-    break;
-  default:
-    message = "Correct The Grade";
+// let grade = prompt("Enter The Grade");
+// let lowGrade = grade.toLowerCase();
+// let message;
+// switch (lowGrade) {
+//   case "a":
+//     message = "Superb";
+//     break;
+//   case "b":
+//   case "c":
+//     message = "Your Passed";
+//     break;
+//   case "d":
+//   case "e":
+//     message = "Promotte";
+//     break;
+//   case "f":
+//     message = "Your Field";
+//     break;
+//   default:
+//     message = "Correct The Grade";
+// }
+// let finalResult = message;
+// console.log(finalResult);
+
+let studentGrade = prompt("Apna Grade Batayen");
+let lowGrade = studentGrade.toLowerCase();
+let response;
+if (lowGrade === "a") {
+  response = "Excellent";
+} else if (lowGrade === "b" || lowGrade === "c") {
+  response = "Your Passed";
+} else if (lowGrade === "d" || lowGrade === "e") {
+  response = "Promotte";
+} else if (lowGrade === "f") {
+  response = "Your Field";
+} else {
+  response = "Correct The GRADE";
 }
-let finalResult = message;
-console.log(finalResult);
+console.log(response);
