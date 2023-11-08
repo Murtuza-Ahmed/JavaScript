@@ -105,3 +105,17 @@
 // } else {
 //   console.log("The entered number is equal to the dynamic number.");
 // }
+
+// const dynamicNumber = 50;
+// let userNumber = parseInt(prompt("ENTER THE NUMBER"));
+// let message;
+// if (isNaN(userNumber)) {
+//   message = "Please Coreect The Valid Number";
+// } else if (userNumber < dynamicNumber) {
+//   message = "Apka Number Less Then He";
+// } else if (userNumber > dynamicNumber) {
+//   message = "Apka Number Greather Then He";
+// } else {
+//   message = "Apka Number BaraBar He";
+// }
+// console.log(message);
