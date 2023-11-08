@@ -75,18 +75,18 @@
 // let finalResult = message;
 // console.log(finalResult);
 
-let studentGrade = prompt("Apna Grade Batayen");
-let lowGrade = studentGrade.toLowerCase();
-let response;
-if (lowGrade === "a") {
-  response = "Excellent";
-} else if (lowGrade === "b" || lowGrade === "c") {
-  response = "Your Passed";
-} else if (lowGrade === "d" || lowGrade === "e") {
-  response = "Promotte";
-} else if (lowGrade === "f") {
-  response = "Your Field";
-} else {
-  response = "Correct The GRADE";
-}
-console.log(response);
+// let studentGrade = prompt("Apna Grade Batayen");
+// let lowGrade = studentGrade.toLowerCase();
+// let response;
+// if (lowGrade === "a") {
+//   response = "Excellent";
+// } else if (lowGrade === "b" || lowGrade === "c") {
+//   response = "Your Passed";
+// } else if (lowGrade === "d" || lowGrade === "e") {
+//   response = "Promotte";
+// } else if (lowGrade === "f") {
+//   response = "Your Field";
+// } else {
+//   response = "Correct The GRADE";
+// }
+// console.log(response);
