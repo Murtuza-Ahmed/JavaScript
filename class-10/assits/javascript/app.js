@@ -120,27 +120,81 @@
 // }
 // console.log(message);
 
-let userFriend = prompt("Enter The Friend");
-let lowUserFriend = userFriend.toLowerCase();
-let response;
-switch (lowUserFriend) {
-  case "hamza":
-    response = true;
-    break;
-  case "umer":
-    response = true;
-    break;
-  case "zubair":
-    response = true;
-    break;
-  case "raza":
-    response = true;
-    break;
-  default:
-    response = false;
-}
-if (response) {
-  console.log("Your Friend");
+// let userFriend = prompt("Enter The Friend");
+// let lowUserFriend = userFriend.toLowerCase();
+// let response;
+// switch (lowUserFriend) {
+//   case "hamza":
+//     response = true;
+//     break;
+//   case "umer":
+//     response = true;
+//     break;
+//   case "zubair":
+//     response = true;
+//     break;
+//   case "raza":
+//     response = true;
+//     break;
+//   default:
+//     response = false;
+// }
+// if (response) {
+//   console.log("Your Friend");
+// } else {
+//   console.log("I Don't Know");
+// }
+
+// Step 1: Create an array for Rock, Paper, and Scissors
+const choices = ["Rock", "Paper", "Scissors"];
+
+// Step 2: Generate random selections for the player and computer
+const playerIndex = Math.floor(Math.random() * 3); // 0, 1, or 2
+const computerIndex = Math.floor(Math.random() * 3);
+
+// Step 3: Create a variable to hold the response message
+let resultMessage = "";
+
+// Step 4: Handle player and computer selections
+if (playerIndex === computerIndex) {
+  resultMessage = "It's a tie!";
 } else {
-  console.log("I Don't Know");
+  // Step 5: Apply game logic
+  if (
+    (playerIndex === 0 && computerIndex === 2) ||
+    (playerIndex === 1 && computerIndex === 0) ||
+    (playerIndex === 2 && computerIndex === 1)
+  ) {
+    resultMessage = "You win!";
+  } else {
+    resultMessage = "Computer wins!";
+  }
 }
+
+// Step 6: Create an output message
+const playerChoice = choices[playerIndex];
+const computerChoice = choices[computerIndex];
+const outputMessage = `Player chose ${playerChoice}, Computer chose ${computerChoice}. ${resultMessage}`;
+
+// Output the result to the console
+console.log(outputMessage);
+
+// const choices = ["Rock", "Paper", "Scissors"];
+// let playerIndex = Math.floor(Math.random() * 3);
+// let computerIndex = Math.floor(Math.random() * 3);
+// let message = "";
+// if (playerIndex === computerIndex) {
+//   message = "Game it's Tie";
+// } else if (
+//   (playerIndex === 0 && computerIndex === 2) ||
+//   (playerIndex === 1 && computerIndex === 0) ||
+//   (playerIndex === 2 && computerIndex === 1)
+// ) {
+//   message = "You Win*";
+// } else {
+//   message = "Computer is Win!";
+// }
+// let playerChoice = choices[playerIndex];
+// let computerChoice = choices[computerIndex];
+// let outputMessage = `player Chose ${playerIndex}, Computer Chose ${computerIndex}. ${message}`;
+// console.log(outputMessage);
