@@ -48,6 +48,13 @@
 // const adjustedMonthIndex = monthIndex + 1;
 // console.log("7. Full Date:", day + " " + monthName + " " + year);
 
-let d = new Date();
-console.log(d.getTime);
-console.log(d.getFullYear);
+// let d = new Date();
+// console.log(d.getTime);
+// console.log(d.getFullYear);
+
+const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"];
+let arr2 = arr.filter((element,index)=>{
+ const ele2 = element.substring(0, 2);
+ return (ele2 == "hi");
+});
+console.log(arr2.join());
