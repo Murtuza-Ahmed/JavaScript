@@ -52,9 +52,9 @@
 // console.log(d.getTime);
 // console.log(d.getFullYear);
 
-const arr = ["Hi","world","hello","Hii","hi","hi World","Hi"];
-let arr2 = arr.filter((element,index)=>{
- const ele2 = element.substring(0, 2);
- return (ele2 == "hi");
+const arr = ["Hi", "world", "hello", "Hii", "hi", "hi World", "Hi"];
+let arr2 = arr.filter((element, index) => {
+  const ele2 = element.substring(0, 2);
+  return ele2 == "hi";
 });
 console.log(arr2.join());
