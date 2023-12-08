@@ -51,3 +51,8 @@
 //   message = "Ap Abi Bache Hn";
 // }
 // console.log(message);
+
+let ageUser = +prompt("Enter The Age");
+let age = 18;
+let terOperator = ageUser <= age ? "18-" : "18+";
+console.log(terOperator);
