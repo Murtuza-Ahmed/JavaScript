@@ -19,10 +19,3 @@
 // }
 // // console.log(arrOfArrays);
 // console.table(arrOfArrays);
-
-let bool = !true;
-if (bool) {
-  console.log("rain is true");
-} else {
-  console.log("rain is false");
-}
