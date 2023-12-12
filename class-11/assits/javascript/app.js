@@ -52,7 +52,13 @@
 // }
 // console.log(message);
 
-let ageUser = +prompt("Enter The Age");
-let age = 18;
-let terOperator = ageUser <= age ? "18-" : "18+";
-console.log(terOperator);
+function age() {
+    let userAge = parseInt(prompt("Enter The AGE"));
+    const age = 18;
+    let result;
+    let matchAge =
+    userAge <= age
+    ? (result = "Sorry Under Age 18")
+    : (result = "Hello Have A Nice Day");
+    console.log(result);
+}
