@@ -52,12 +52,13 @@
 // }
 // console.log(message);
 
-function age() {
-  let userAge = parseInt(prompt("Enter The AGE"));
-  const age = 18;
-  let result;
-  userAge <= age
-    ? (result = "Sorry Under Age 18")
-    : (result = "Hello Have A Nice Day");
-  console.log(result);
-}
+// function age() {
+//   let userAge = parseInt(prompt("Enter The AGE"));
+//   const age = 18;
+//   let result;
+//   userAge <= age
+//     ? (result = "Sorry Under Age 18")
+//     : (result = "Hello Have A Nice Day");
+//   console.log(result);
+// }
+
