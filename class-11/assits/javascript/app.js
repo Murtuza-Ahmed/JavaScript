@@ -62,27 +62,62 @@
 //   console.log(result);
 // }
 
-function game() {
-  let userGameAge = +prompt("Enter The AGE");
-  let age = 17;
-  let cost;
-  let message;
-  if (userGameAge <= age) {
-    cost = 0;
-    message = "Sorry Under AGE 18";
-  } else if (userGameAge <= 18 || userGameAge <= 20) {
-    cost = 2;
-    message = "Metal Sulg Enjoye Your Game";
-  } else if (userGameAge <= 22 || userGameAge <= 24) {
-    cost = 4;
-    message = "PUBG Enjoye Your Game";
-  } else if (userGameAge <= 26 || userGameAge <= 28) {
-    cost = 6;
-    message = "Free Fire Enjoye Your Game";
-  } else {
-    cost = 8;
-    message = "GTA Enjoye Your Game";
-  }
-  let finalMessage = `${message} Your Age ${userGameAge} cost:${cost}`;
-  console.log(finalMessage);
+// function game() {
+//   let userGameAge = +prompt("Enter The AGE");
+//   let age = 17;
+//   let cost;
+//   let message;
+//   if (userGameAge <= age) {
+//     cost = 0;
+//     message = "Sorry Under AGE 18";
+//   } else if (userGameAge <= 18 || userGameAge <= 20) {
+//     cost = 2;
+//     message = "Metal Sulg Enjoye Your Game";
+//   } else if (userGameAge <= 22 || userGameAge <= 24) {
+//     cost = 4;
+//     message = "PUBG Enjoye Your Game";
+//   } else if (userGameAge <= 26 || userGameAge <= 28) {
+//     cost = 6;
+//     message = "Free Fire Enjoye Your Game";
+//   } else {
+//     cost = 8;
+//     message = "GTA Enjoye Your Game";
+//   }
+//   let finalMessage = `${message} Your Age ${userGameAge} cost:${cost}`;
+//   console.log(finalMessage);
+// }
+
+let rondomNumber = Math.floor(Math.random() * 8);
+let userInput = prompt("Enter Your Number");
+let message;
+switch (rondomNumber) {
+  case 0 === userInput:
+    message = "phir se kosish karen";
+    break;
+  case 1 === userInput:
+    message = "mheran car";
+    break;
+  case 2 === userInput:
+    message = "cultas car";
+    break;
+  case 3 === userInput:
+    message = "carolla car";
+    break;
+  case 4 === userInput:
+    message = "civic car";
+    break;
+  case 5 === userInput:
+    message = "dubble dor";
+    break;
+  case 6 === userInput:
+    message = "land crusior";
+    break;
+  case 7 === userInput:
+    message = "BMW car";
+    break;
+  default:
+    message = "khali card";
+    break;
 }
+let finalMessage = `${message} MyNumber ${rondomNumber} YourInput ${userInput}`;
+console.log(finalMessage);
