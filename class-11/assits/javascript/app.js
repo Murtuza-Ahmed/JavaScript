@@ -176,3 +176,12 @@
 // }
 // let finalRequest = `${responsive} MyNumber:${floorNumber} YourNumber:${userInput}`;
 // console.log(finalRequest);
+
+let dynamicNumber = Math.floor(Math.random() * 10) + 1;
+let userInput = +prompt("Enter The Number");
+let message;
+dynamicNumber >= userInput
+  ? (message = "Apka Number Chotta He")
+  : (message = "Apka Number Bara He");
+let finalRequest = `GenrateNumber:${dynamicNumber} Input:${userInput} ${message}`;
+console.log(finalRequest);
