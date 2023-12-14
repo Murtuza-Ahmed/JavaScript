@@ -91,28 +91,28 @@ let rondomNumber = Math.floor(Math.random() * 8);
 let userInput = prompt("Enter Your Number");
 let message;
 switch (rondomNumber) {
-  case 0 === userInput:
+  case 0 && userInput:
     message = "phir se kosish karen";
     break;
-  case 1 === userInput:
+  case 1 && userInput:
     message = "mheran car";
     break;
-  case 2 === userInput:
+  case 2 && userInput:
     message = "cultas car";
     break;
-  case 3 === userInput:
+  case 3 && userInput:
     message = "carolla car";
     break;
-  case 4 === userInput:
+  case 4 && userInput:
     message = "civic car";
     break;
-  case 5 === userInput:
+  case 5 && userInput:
     message = "dubble dor";
     break;
-  case 6 === userInput:
+  case 6 && userInput:
     message = "land crusior";
     break;
-  case 7 === userInput:
+  case 7 && userInput:
     message = "BMW car";
     break;
   default:
