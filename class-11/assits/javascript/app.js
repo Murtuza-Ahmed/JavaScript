@@ -177,11 +177,36 @@
 // let finalRequest = `${responsive} MyNumber:${floorNumber} YourNumber:${userInput}`;
 // console.log(finalRequest);
 
-let dynamicNumber = Math.floor(Math.random() * 10) + 1;
-let userInput = +prompt("Enter The Number");
+// let dynamicNumber = Math.floor(Math.random() * 10) + 1;
+// let userInput = +prompt("Enter The Number");
+// let message;
+// dynamicNumber >= userInput
+//   ? (message = "Apka Number Chotta He")
+//   : (message = "Apka Number Bara He");
+// let finalRequest = `GenrateNumber:${dynamicNumber} Input:${userInput} ${message}`;
+// console.log(finalRequest);
+
+let userFriendInput = prompt("Enter Your Friend");
+let userFriend = userFriendInput.toLowerCase();
 let message;
-dynamicNumber >= userInput
-  ? (message = "Apka Number Chotta He")
-  : (message = "Apka Number Bara He");
-let finalRequest = `GenrateNumber:${dynamicNumber} Input:${userInput} ${message}`;
-console.log(finalRequest);
+switch (userFriend) {
+  case "hamza":
+    message = "true";
+    break;
+  case "zubair":
+    message = "true";
+    break;
+  case "umer":
+    message = "true";
+    break;
+  case "hunoof":
+    message = "false";
+    break;
+  case "touseef":
+    message = "false";
+    break;
+  default:
+    message = "Not Friend";
+    break;
+}
+console.log(message);
