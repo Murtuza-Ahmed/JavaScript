@@ -121,3 +121,37 @@
 // }
 // let finalMessage = `${message} MyNumber ${rondomNumber} YourInput ${userInput}`;
 // console.log(finalMessage);
+
+// let prize = Math.floor(Math.random() * 10);
+// let userInput = +prompt("Enter The Number");
+// let result;
+// switch (prize) {
+//   case 0:
+//     result = "Khali Jaan";
+//     break;
+//   case 1:
+//   case 2:
+//     result = "BMW car";
+//     break;
+//   case 3:
+//   case 4:
+//     result = "civic car";
+//     break;
+//   case 5:
+//   case 6:
+//     result = "corolla car";
+//     break;
+//   case 7:
+//   case 8:
+//     result = "dubble dor";
+//     break;
+//   case 9:
+//   case 10:
+//     result = "land crusior";
+//     break;
+//   default:
+//     result = "under age 18";
+//     break;
+// }
+// let finalRequest = `${result} prize: ${prize} Input ${userInput}`;
+// console.log(finalRequest);
