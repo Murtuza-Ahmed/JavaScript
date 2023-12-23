@@ -186,27 +186,27 @@
 // let finalRequest = `GenrateNumber:${dynamicNumber} Input:${userInput} ${message}`;
 // console.log(finalRequest);
 
-let userFriendInput = prompt("Enter Your Friend");
-let userFriend = userFriendInput.toLowerCase();
-let message;
-switch (userFriend) {
-  case "hamza":
-    message = "true";
-    break;
-  case "zubair":
-    message = "true";
-    break;
-  case "umer":
-    message = "true";
-    break;
-  case "hunoof":
-    message = "false";
-    break;
-  case "touseef":
-    message = "false";
-    break;
-  default:
-    message = "Not Friend";
-    break;
-}
-console.log(message);
+// let userFriendInput = prompt("Enter Your Friend");
+// let userFriend = userFriendInput.toLowerCase();
+// let message;
+// switch (userFriend) {
+//   case "hamza":
+//     message = "true";
+//     break;
+//   case "zubair":
+//     message = "true";
+//     break;
+//   case "umer":
+//     message = "true";
+//     break;
+//   case "hunoof":
+//     message = "false";
+//     break;
+//   case "touseef":
+//     message = "false";
+//     break;
+//   default:
+//     message = "Not Friend";
+//     break;
+// }
+// console.log(message);
