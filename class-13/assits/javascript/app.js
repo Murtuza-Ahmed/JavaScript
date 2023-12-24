@@ -15,5 +15,22 @@
 // }
 // describeRandomName();
 
-let sayHi = () => console.log("hi");
-sayHi();
+// let sayHi = () => console.log("hi");
+// sayHi();
+
+// let i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
+let notFound = true;
+while (notFound && nameArray.length > 0) {
+  if (nameArray[0] === "Umer") {
+    console.log("Found her!");
+    notFound = false;
+  } else {
+    nameArray.shift();
+  }
+}
