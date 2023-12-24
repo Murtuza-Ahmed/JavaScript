@@ -24,6 +24,7 @@
 //   i++;
 // }
 
+let userFriends = prompt("Enter The Name");
 let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
 let notFound = true;
 while (notFound && nameArray.length > 0) {
