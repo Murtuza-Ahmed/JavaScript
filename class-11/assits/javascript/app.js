@@ -210,3 +210,57 @@
 //     break;
 // }
 // console.log(message);
+
+// Step 1: Create an array for Rock, Paper, and Scissors
+// const choices = ["Rock", "Paper", "Scissors"];
+
+// // Step 2: Generate random numbers for player and computer
+// const playerChoiceIndex = Math.floor(Math.random() * 3);
+// const computerChoiceIndex = Math.floor(Math.random() * 3);
+
+// // Step 3: Create a variable for the response message
+// let resultMessage;
+
+// // Step 4: Handle player and computer selections
+// if (playerChoiceIndex === computerChoiceIndex) {
+//   resultMessage = "It's a tie!";
+// } else {
+//   // Step 5: Apply game logic
+//   if (
+//     (playerChoiceIndex === 0 && computerChoiceIndex === 2) ||
+//     (playerChoiceIndex === 1 && computerChoiceIndex === 0) ||
+//     (playerChoiceIndex === 2 && computerChoiceIndex === 1)
+//   ) {
+//     resultMessage = "You win!";
+//   } else {
+//     resultMessage = "Computer wins!";
+//   }
+// }
+
+// // Step 6: Display the output message
+// console.log(`Player chose: ${choices[playerChoiceIndex]}`);
+// console.log(`Computer chose: ${choices[computerChoiceIndex]}`);
+// console.log(resultMessage);
+
+function game() {
+  let game = ["Rock", "Paper", "Scissors"];
+  let userGameNumber = +prompt("Enter The 0,2,1 Number");
+  let computerGenrateNumber = Math.floor(Math.random() * 3);
+  let response;
+  if (userGameNumber === computerGenrateNumber) {
+    response = "It's a Tie";
+  } else {
+    if (
+      (userGameNumber === 0 && computerGenrateNumber === 2) ||
+      (userGameNumber === 1 && computerGenrateNumber === 0) ||
+      (userGameNumber === 2 && computerGenrateNumber === 1)
+    ) {
+      response = "You Win!";
+    } else {
+      response = "Computer Win!";
+    }
+  }
+  console.log(`Player chose: ${game[userGameNumber]}`);
+  console.log(`Computer chose: ${game[computerGenrateNumber]}`);
+  console.log(response);
+}
