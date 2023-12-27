@@ -16,5 +16,5 @@ function signup() {
   let password = document.getElementById("password").value;
   console.log(`Email: ${email}`);
   console.log(`Password: ${password}`);
-  
+  auth.createUserWithEmailAndPassword(email,password);
 }
