@@ -53,7 +53,7 @@ function createdata() {
   console.log(`Password: ${password}`);
   db.collection("users")
     .add({
-      fullname: fullname,
+      fullname: name,
       email: email,
       password: password,
     })
