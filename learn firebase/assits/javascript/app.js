@@ -11,6 +11,7 @@ const firebaseApp = firebase.initializeApp({
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
 const auth = firebaseApp.auth();
+const db = firebaseApp.firestore();
 function signup() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -44,12 +45,18 @@ function signin() {
     });
 }
 function createdata() {
+  let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
+  console.log(`Name: ${name}`);
   console.log(`Email: ${email}`);
   console.log(`Password: ${password}`);
-  auth
-    .signInWithEmailAndPassword(email, password)
+  db.collection("users")
+    .add({
+      fullname: fullname,
+      email: email,
+      password: password,
+    })
     .then((res) => {
       alert(res);
       console.log(res);
