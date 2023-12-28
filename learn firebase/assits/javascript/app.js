@@ -12,7 +12,7 @@ const firebaseApp = firebase.initializeApp({
 // const app = initializeApp(firebaseConfig);
 const auth = firebaseApp.auth();
 const db = firebaseApp.firestore();
-function signup() {
+function signUp() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   console.log(`Email: ${email}`);
@@ -28,7 +28,7 @@ function signup() {
       console.log(error);
     });
 }
-function signin() {
+function signIn() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   console.log(`Email: ${email}`);
@@ -44,7 +44,7 @@ function signin() {
       console.log(error);
     });
 }
-function createdata() {
+function createData() {
   let name = document.getElementById("name").value;
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
@@ -57,6 +57,18 @@ function createdata() {
       email: email,
       password: password,
     })
+    .then((res) => {
+      alert(res);
+      console.log(res);
+    })
+    .catch((error) => {
+      alert(error);
+      console.log(error);
+    });
+}
+function readeData() {
+  db.collection("users")
+    .get()
     .then((res) => {
       alert(res);
       console.log(res);
