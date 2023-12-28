@@ -100,7 +100,7 @@ function updateData() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   db.collection("users")
-    .doc("7e342/databases")
+    .doc("Wjc4O1cbJ0EsOd0k24SW")
     .update({
       name: name,
       email: email,
