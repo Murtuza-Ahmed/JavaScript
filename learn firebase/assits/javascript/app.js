@@ -71,7 +71,11 @@ function readeData() {
     .get()
     .then((res) => {
       alert("Read Data");
-      console.log(res);
+      console.log(
+        res.docs.map((item) => {
+          return { ...item.data(), id: item.id };
+        })
+      );
     })
     .catch((error) => {
       alert(error);
