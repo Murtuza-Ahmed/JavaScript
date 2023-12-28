@@ -95,3 +95,23 @@ function deleteData() {
       console.log(error);
     });
 }
+function updateData() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  db.collection("users")
+    .doc("5hij3f7QqAdq15l2tt1s")
+    .update({
+      name: name,
+      email: email,
+      password: password,
+    })
+    .then((res) => {
+      alert("Data Update");
+      console.log(res);
+    })
+    .catch((error) => {
+      alert("Data Not Update");
+      console.log(error);
+    });
+}
