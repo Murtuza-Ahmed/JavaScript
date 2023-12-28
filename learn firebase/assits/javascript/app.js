@@ -43,3 +43,19 @@ function signin() {
       console.log(error);
     });
 }
+function createdata() {
+  let email = document.getElementById("email").value;
+  let password = document.getElementById("password").value;
+  console.log(`Email: ${email}`);
+  console.log(`Password: ${password}`);
+  auth
+    .signInWithEmailAndPassword(email, password)
+    .then((res) => {
+      alert(res);
+      console.log(res);
+    })
+    .catch((error) => {
+      alert(error);
+      console.log(error);
+    });
+}
