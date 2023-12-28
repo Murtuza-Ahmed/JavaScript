@@ -20,7 +20,7 @@ function signUp() {
   auth
     .createUserWithEmailAndPassword(email, password)
     .then((res) => {
-      alert(res);
+      alert("SignUp Succes");
       console.log(res);
     })
     .catch((error) => {
@@ -36,7 +36,7 @@ function signIn() {
   auth
     .signInWithEmailAndPassword(email, password)
     .then((res) => {
-      alert(res);
+      alert("signIn Succes");
       console.log(res);
     })
     .catch((error) => {
@@ -58,7 +58,7 @@ function createData() {
       password: password,
     })
     .then((res) => {
-      alert(res);
+      alert("Data Save");
       console.log(res);
     })
     .catch((error) => {
@@ -70,7 +70,7 @@ function readeData() {
   db.collection("users")
     .get()
     .then((res) => {
-      alert(res);
+      alert("Read Data");
       console.log(res);
     })
     .catch((error) => {
