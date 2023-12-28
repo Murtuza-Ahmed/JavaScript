@@ -25,8 +25,8 @@
 // }
 
 let userFriends = prompt("Enter The Name");
-let friendHere = userFriends.toLowerCase();
-// console.log(friend);
+let friendHere = userFriends.toLowerCase()
+console.log(friendHere);
 let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
 let notFound = true;
 while (notFound && nameArray.length > 0) {
