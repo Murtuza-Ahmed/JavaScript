@@ -12,6 +12,7 @@ const firebaseApp = firebase.initializeApp({
 // const app = initializeApp(firebaseConfig);
 const auth = firebaseApp.auth();
 const db = firebaseApp.firestore();
+window.onload = readeData();
 function signUp() {
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
