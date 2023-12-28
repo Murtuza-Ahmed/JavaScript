@@ -82,3 +82,16 @@ function readeData() {
       console.log(error);
     });
 }
+function deleteData() {
+  db.collection("users")
+    .doc("5hij3f7QqAdq15l2tt1s")
+    .delete()
+    .then((res) => {
+      alert("Delete Data");
+      console.log(res);
+    })
+    .catch((error) => {
+      alert("Data No't Delete");
+      console.log(error);
+    });
+}
