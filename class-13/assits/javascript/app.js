@@ -25,7 +25,7 @@
 // }
 
 let userFriends = prompt("Enter The Name");
-let friendHere = userFriends.toLowerCase()
+let friendHere = userFriends.toLowerCase();
 console.log(friendHere);
 let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
 let notFound = true;
@@ -35,5 +35,19 @@ while (notFound && nameArray.length > 0) {
     notFound = false;
   } else {
     nameArray.shift();
+  }
+}
+
+let maxNumber = 10;
+let genrateNumber = Math.floor(Math.random() * maxNumber + 1);
+let isCorrect = false;
+while (!isCorrect) {
+  let userNumber = +prompt(`Enter The Number! ${maxNumber}`);
+  if (userNumber === genrateNumber) {
+    isCorrect = true;
+    console.log("Congrulation! Your Guess is Correct!");
+  } else if (userNumber > genrateNumber) {
+    console.log("To High! Try Again");
+  } else {
   }
 }
