@@ -71,3 +71,57 @@ function table() {
     document.getElementById("table").innerText = tableResults;
   }
 }
+
+// let number = 100;
+// for (number; number > 1; number--) {
+//   console.log(number);
+// }
+
+let array = [
+  50, 55, 69, 87, 89, 90, 45, 90, 95, 97, 85, 75, 77, 56, 86, 69, 60, 60, 69,
+  60, 40, 45, 49, 50, 30, 39, 41, 44, 50, 55, 69, 87, 89, 90, 45, 90, 95, 97,
+  85, 75, 77, 56, 86, 69, 60, 60, 69, 60, 40, 45, 49, 50, 30, 39, 41, 44,
+];
+let arrNumber = 0;
+let message = {};
+// for (arrNumber; arrNumber < array.length; arrNumber++) {
+//   if (array[arrNumber] > 90) {
+//     console.log("Excellent");
+//   } else if (array[arrNumber] > 80) {
+//     console.log("Super");
+//   } else if (array[arrNumber] > 70) {
+//     console.log("Good");
+//   } else if (array[arrNumber] > 60) {
+//     console.log("Promotte");
+//   } else if (array[arrNumber] < 40) {
+//     console.log("Feild");
+//   } else {
+//     console.log("Try Number");
+//   }
+// }
+
+for (arrNumber; arrNumber < array.length; arrNumber++) {
+  switch (true) {
+    case array[arrNumber] < 90:
+      message = "Superb";
+      break;
+    case array[arrNumber] < 80:
+      message = "Very Excellent";
+      break;
+    case arrNumber[arrNumber] < 70:
+      message = "Very Good";
+      break;
+    case array[arrNumber]:
+      message = "Better";
+      break;
+    case array[arrNumber] < 60:
+      message = "Promotte";
+      break;
+    case array[arrNumber] < 50:
+      message = "Feild";
+      break;
+    default:
+      message = "Try Again";
+  }
+  console.log(message);
+}
