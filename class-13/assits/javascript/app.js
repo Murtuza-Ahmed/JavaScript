@@ -63,24 +63,11 @@
 // window.onload = table();
 function table() {
   let table = +prompt("Enter Number");
-  let tableResults;
+  let tableResults = "";
   for (let i = 1; i <= 10; i++) {
     let tableResult = `${table} x ${i} = ${table * i}`;
     console.log(tableResult);
-    tableResult += tableResult = "\n";
-    document.getElementById("table").innerText = tableResults;
+    tableResults += tableResult + "\n";
   }
+  document.getElementById("table").innerText = tableResults;
 }
-
-// function table() {
-//   let table = +prompt("Enter Number");
-//   let tableResults = ""; // Accumulate results in this variable
-
-//   for (let i = 1; i <= 10; i++) {
-//     let tableResult = `${table} x ${i} = ${table * i}`;
-//     console.log(tableResult);
-//     tableResults += tableResult + "\n"; // Append each result to the variable
-//   }
-
-//   document.getElementById("table").innerText = tableResults; // Set inner text after the loop
-// }
