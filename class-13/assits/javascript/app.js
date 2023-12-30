@@ -24,19 +24,19 @@
 //   i++;
 // }
 
-// let userFriends = prompt("Enter The Name");
-// let friendHere = userFriends.toLowerCase();
-// console.log(friendHere);
-// let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
-// let notFound = true;
-// while (notFound && nameArray.length > 0) {
-//   if (nameArray[0] === friendHere) {
-//     console.log("Found her!");
-//     notFound = false;
-//   } else {
-//     nameArray.shift();
-//   }
-// }
+let userFriends = prompt("Enter The Name");
+let friendHere = userFriends.toLowerCase();
+console.log(friendHere);
+let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
+let notFound = true;
+while (notFound && nameArray.length > 0) {
+  if (nameArray[0] === friendHere) {
+    console.log("Found her!");
+    notFound = false;
+  } else {
+    nameArray.shift();
+  }
+}
 
 // let maxNumber = 10;
 // let genrateNumber = Math.floor(Math.random() * maxNumber + 1);
@@ -100,29 +100,30 @@ let message = {};
 //   }
 // }
 
-for (arrNumber; arrNumber < array.length; arrNumber++) {
-  switch (true) {
-    case array[arrNumber] < 90:
-      message = "Superb";
-      break;
-    case array[arrNumber] < 80:
-      message = "Very Excellent";
-      break;
-    case arrNumber[arrNumber] < 70:
-      message = "Very Good";
-      break;
-    case array[arrNumber]:
-      message = "Better";
-      break;
-    case array[arrNumber] < 60:
-      message = "Promotte";
-      break;
-    case array[arrNumber] < 50:
-      message = "Feild";
-      break;
-    default:
-      message = "Try Again";
-  }
-  let finalResult = `${message} student ${arrNumber}`;
-  console.log(finalResult);
-}
+// for (arrNumber; arrNumber < array.length; arrNumber++) {
+//   switch (true) {
+//     case array[arrNumber] < 90:
+//       message = "Superb";
+//       break;
+//     case array[arrNumber] < 80:
+//       message = "Very Excellent";
+//       break;
+//     case arrNumber[arrNumber] < 70:
+//       message = "Very Good";
+//       break;
+//     case array[arrNumber]:
+//       message = "Better";
+//       break;
+//     case array[arrNumber] < 60:
+//       message = "Promotte";
+//       break;
+//     case array[arrNumber] < 50:
+//       message = "Feild";
+//       break;
+//     default:
+//       message = "Try Again";
+//   }
+//   let finalResult = `${message} student ${arrNumber}`;
+//   console.log(finalResult);
+// }
+
