@@ -68,6 +68,6 @@ function table() {
     let tableResult = `${table} x ${i} = ${table * i}`;
     console.log(tableResult);
     tableResults += tableResult + "\n";
+    document.getElementById("table").innerText = tableResults;
   }
-  document.getElementById("table").innerText = tableResults;
 }
