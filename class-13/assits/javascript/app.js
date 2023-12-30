@@ -123,5 +123,6 @@ for (arrNumber; arrNumber < array.length; arrNumber++) {
     default:
       message = "Try Again";
   }
-  console.log(message);
+  let finalResult = `${message} student ${arrNumber}`;
+  console.log(finalResult);
 }
