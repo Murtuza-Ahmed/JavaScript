@@ -127,11 +127,4 @@ let message = {};
 //   console.log(finalResult);
 // }
 
-let blankArray = [];
-for (let i = 1; i <= 10; i++) {
-  let obj = {
-    lesson: "",
-    statusbar: true,
-  };
-  console.log(obj, i);
-}
+
