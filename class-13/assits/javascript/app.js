@@ -127,4 +127,13 @@ let message = {};
 //   console.log(finalResult);
 // }
 
-
+let myWork = [];
+for (let i = 1; i <= 10; i++) {
+  let statusbar = i % 2 === 0 ? true : false;
+  let lesson = {
+    name: "lesson" + i,
+    statusbar: statusbar,
+  };
+  myWork.push(lesson);
+}
+console.log(myWork);
