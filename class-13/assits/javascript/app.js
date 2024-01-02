@@ -24,19 +24,19 @@
 //   i++;
 // }
 
-let userFriends = prompt("Enter The Name");
-let friendHere = userFriends.toLowerCase();
-console.log(friendHere);
-let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
-let notFound = true;
-while (notFound && nameArray.length > 0) {
-  if (nameArray[0] === friendHere) {
-    console.log("Found her!");
-    notFound = false;
-  } else {
-    nameArray.shift();
-  }
-}
+// let userFriends = prompt("Enter The Name");
+// let friendHere = userFriends.toLowerCase();
+// console.log(friendHere);
+// let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
+// let notFound = true;
+// while (notFound && nameArray.length > 0) {
+//   if (nameArray[0] === friendHere) {
+//     console.log("Found her!");
+//     notFound = false;
+//   } else {
+//     nameArray.shift();
+//   }
+// }
 
 // let maxNumber = 10;
 // let genrateNumber = Math.floor(Math.random() * maxNumber + 1);
@@ -127,3 +127,11 @@ let message = {};
 //   console.log(finalResult);
 // }
 
+let blankArray = [];
+for (let i = 1; i <= 10; i++) {
+  let obj = {
+    lesson: "",
+    statusbar: true,
+  };
+  console.log(obj, i);
+}
