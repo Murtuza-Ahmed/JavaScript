@@ -169,3 +169,17 @@ let message = {};
 //   number++;
 // }
 
+// let userFriends = prompt("Enter The Name");
+// let friendHere = userFriends.toLowerCase();
+// console.log(friendHere);
+let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
+let notFound = true;
+while (notFound && nameArray.length > 0) {
+  if (nameArray[0] === "Zubair") {
+    console.log("Found her!");
+    notFound = false;
+  } else {
+    nameArray.shift();
+  }
+}
+console.log(nameArray);
