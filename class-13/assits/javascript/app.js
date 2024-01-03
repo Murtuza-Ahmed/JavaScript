@@ -127,13 +127,20 @@ let message = {};
 //   console.log(finalResult);
 // }
 
-let myWork = [];
-for (let i = 1; i <= 10; i++) {
-  let statusbar = i % 2 === 0 ? true : false;
-  let lesson = {
-    name: "lesson" + i,
-    statusbar: statusbar,
-  };
-  myWork.push(lesson);
-}
-console.log(myWork);
+// let myWork = [];
+// for (let i = 1; i <= 10; i++) {
+//   let statusbar = i % 2 === 0 ? true : false;
+//   let lesson = {
+//     name: "lesson" + i,
+//     statusbar: statusbar,
+//   };
+//   myWork.push(lesson);
+// }
+// console.log(myWork);
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log("I VALUE", i);
+//   for (let e = 0; e <= 5; e++) {
+//     console.log("E VALUE", e);
+//   }
+// }
