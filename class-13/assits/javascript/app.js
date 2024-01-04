@@ -172,27 +172,27 @@ let message = {};
 // let userFriends = prompt("Enter The Name");
 // let friendHere = userFriends.toLowerCase();
 // console.log(friendHere);
-let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
-let notFound = true;
-while (notFound && nameArray.length > 0) {
-  if (nameArray[0] === "Zubair") {
-    console.log("Found her!");
-    notFound = false;
-  } else {
-    nameArray.shift();
-  }
-}
-console.log(nameArray);
+// let nameArray = ["Hamza", "Umer", "Zubair", "Murtuza"];
+// let notFound = true;
+// while (notFound && nameArray.length > 0) {
+//   if (nameArray[0] === "Zubair") {
+//     console.log("Found her!");
+//     notFound = false;
+//   } else {
+//     nameArray.shift();
+//   }
+// }
+// console.log(nameArray);
 
-let num = 1;
-let mun = 2;
-let temp;
-let fiboArray = [];
-while (fiboArray.length < 25) {
-  fiboArray.push(num);
-  temp = num + mun;
-  num = mun;
-  mun = temp;
-}
-console.log(temp);
-console.log(fiboArray);
+// let num = 1;
+// let mun = 2;
+// let temp;
+// let fiboArray = [];
+// while (fiboArray.length < 25) {
+//   fiboArray.push(num);
+//   temp = num + mun;
+//   num = mun;
+//   mun = temp;
+// }
+// console.log(temp);
+// console.log(fiboArray);
