@@ -213,8 +213,15 @@ let message = {};
 //   }
 // }
 
-let number;
+// let number;
+// do {
+//   number = prompt("Please Enter A number B/W 0 ans 100");
+// } while (!(number >= 0 && number < 100));
+// console.log(number);
+
+let counter = 0;
+let step = 1;
 do {
-  number = prompt("Please Enter A number B/W 0 ans 100");
-} while (!(number >= 0 && number < 100));
-console.log(number);
+  console.log(`Counter: ${counter}`);
+  counter += step;
+} while (counter <= 100);
