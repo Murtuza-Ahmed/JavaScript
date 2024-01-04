@@ -317,3 +317,10 @@ console.log(keyValue);
 for (let [key, value] of Object.entries(civicCar)) {
   console.log(key + ":" + value);
 }
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  if (i === 5) {
+    break;
+  }
+}
