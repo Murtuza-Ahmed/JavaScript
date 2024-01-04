@@ -197,18 +197,24 @@ let message = {};
 // console.log(temp);
 // console.log(fiboArray);
 
-let maxValue = 5;
-let genrateNumber = Math.floor(Math.random() * maxValue) + 1;
-console.log(genrateNumber);
-let isCorrect = false;
-while (!isCorrect) {
-  let userNumber = +prompt("Enter a Number 1-" + maxValue);
-  if (userNumber === genrateNumber) {
-    isCorrect = true;
-    console.log("You! Win");
-  } else if (userNumber <= genrateNumber) {
-    console.log("Small Number");
-  } else {
-    console.log("Big Number");
-  }
-}
+// let maxValue = 5;
+// let genrateNumber = Math.floor(Math.random() * maxValue) + 1;
+// console.log(genrateNumber);
+// let isCorrect = false;
+// while (!isCorrect) {
+//   let userNumber = +prompt("Enter a Number 1-" + maxValue);
+//   if (userNumber === genrateNumber) {
+//     isCorrect = true;
+//     console.log("You! Win");
+//   } else if (userNumber <= genrateNumber) {
+//     console.log("Small Number");
+//   } else {
+//     console.log("Big Number");
+//   }
+// }
+
+let number;
+do {
+  number = prompt("Please Enter A number B/W 0 ans 100");
+} while (!(number >= 0 && number < 100));
+console.log(number);
