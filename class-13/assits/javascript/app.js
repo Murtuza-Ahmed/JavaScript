@@ -243,13 +243,25 @@ let message = {};
 // }
 // console.log(blankArray);
 
-let myArray = [];
-for (let i = 0; i < 10; i++) {
-  myArray.push(i);
-  for (let e = 0; e <= myArray.length; e++) {
-    console.log(e);
-  }
-}
-for (let j of myArray) {
-  console.log(j);
+// let myArray = [];
+// for (let i = 0; i < 10; i++) {
+//   myArray.push(i);
+//   for (let e = 0; e <= myArray.length; e++) {
+//     console.log(e);
+//   }
+// }
+// for (let j of myArray) {
+//   console.log(j);
+// }
+
+let car = {
+  model: "golf",
+  make: "volkswagen",
+  year: 1999,
+  color: "black",
+};
+console.log(car["color"]);
+console.log(car.year);
+for (let i in car) {
+  console.log(car[i]);
 }
