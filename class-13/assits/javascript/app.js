@@ -219,9 +219,14 @@ let message = {};
 // } while (!(number >= 0 && number < 100));
 // console.log(number);
 
-let counter = 0;
-let step = 1;
-do {
-  console.log(`Counter: ${counter}`);
-  counter += step;
-} while (counter <= 100);
+// let counter = 0;
+// let step = 1;
+// do {
+//   console.log(`Counter: ${counter}`);
+//   counter += step;
+// } while (counter <= 100);
+
+let names = ["Murtuza", "Hamza", "Zubair", "Umer"];
+for (let i of names) {
+  console.log(i);
+}
