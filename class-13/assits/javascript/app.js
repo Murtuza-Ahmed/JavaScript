@@ -183,3 +183,16 @@ while (notFound && nameArray.length > 0) {
   }
 }
 console.log(nameArray);
+
+let num = 1;
+let mun = 2;
+let temp;
+let fiboArray = [];
+while (fiboArray.length < 25) {
+  fiboArray.push(num);
+  temp = num + mun;
+  num = mun;
+  mun = temp;
+}
+console.log(temp);
+console.log(fiboArray);
