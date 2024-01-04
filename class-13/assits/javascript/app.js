@@ -196,3 +196,19 @@ let message = {};
 // }
 // console.log(temp);
 // console.log(fiboArray);
+
+let maxValue = 5;
+let genrateNumber = Math.floor(Math.random() * maxValue) + 1;
+console.log(genrateNumber);
+let isCorrect = false;
+while (!isCorrect) {
+  let userNumber = +prompt("Enter The 1 to 5 Number");
+  if (userNumber === genrateNumber) {
+    isCorrect = true;
+    console.log("You! Win");
+  } else if (userNumber <= genrateNumber) {
+    console.log("Small Number");
+  } else {
+    console.log("Big Number");
+  }
+}
