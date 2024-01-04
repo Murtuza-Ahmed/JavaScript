@@ -280,3 +280,14 @@ console.log(arrayStudent);
 for (let j of arrayStudent) {
   console.log(j);
 }
+let friend = {
+  name: "sheroz",
+  rollNumber: 67,
+  class: "inter",
+  friends: "local",
+};
+let arrayKey = Object.keys(friend);
+console.log(arrayKey);
+for (let key of arrayKey) {
+  console.log(key);
+}
