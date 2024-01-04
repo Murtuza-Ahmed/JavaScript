@@ -265,3 +265,18 @@ console.log(car.year);
 for (let i in car) {
   console.log(car[i]);
 }
+
+let student = {
+  name: "sheroz",
+  rollNumber: 25,
+  class: "Matric",
+};
+for (let i in student) {
+  console.log(i, student[i]);
+}
+let arrayStudent = [];
+arrayStudent.push(student);
+console.log(arrayStudent);
+for (let j of arrayStudent) {
+  console.log(j);
+}
