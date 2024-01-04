@@ -202,7 +202,7 @@ let genrateNumber = Math.floor(Math.random() * maxValue) + 1;
 console.log(genrateNumber);
 let isCorrect = false;
 while (!isCorrect) {
-  let userNumber = +prompt("Enter The 1 to 5 Number");
+  let userNumber = +prompt("Enter a Number 1-" + maxValue);
   if (userNumber === genrateNumber) {
     isCorrect = true;
     console.log("You! Win");
