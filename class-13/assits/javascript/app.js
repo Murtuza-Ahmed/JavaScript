@@ -226,7 +226,30 @@ let message = {};
 //   counter += step;
 // } while (counter <= 100);
 
-let names = ["Murtuza", "Hamza", "Zubair", "Umer"];
-for (let i of names) {
-  console.log(i);
+// let names = ["Murtuza", "Hamza", "Zubair", "Umer"];
+// for (let i of names) {
+//   console.log(i);
+// }
+
+// let blankArray = [];
+// for (let i = 1; i <= 10; i++) {
+//   blankArray.push(i);
+//   for (let i = 0; i < blankArray.length; i++) {
+//     console.log(i);
+//   }
+// }
+// for (let i of blankArray) {
+//   console.log(i);
+// }
+// console.log(blankArray);
+
+let myArray = [];
+for (let i = 0; i < 10; i++) {
+  myArray.push(i);
+  for (let e = 0; e <= myArray.length; e++) {
+    console.log(e);
+  }
+}
+for (let j of myArray) {
+  console.log(j);
 }
