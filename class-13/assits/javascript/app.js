@@ -287,7 +287,33 @@ let friend = {
   friends: "local",
 };
 let arrayKey = Object.keys(friend);
+let arrayValue = Object.values(friend);
 console.log(arrayKey);
+console.log(arrayValue);
 for (let key of arrayKey) {
   console.log(key);
+}
+for (let value of arrayValue) {
+  console.log(value);
+}
+
+let civicCar = {
+  model: 2023,
+  name: "civic",
+  color: "Black",
+  prise: 230000,
+};
+let civicKey = Object.keys(civicCar);
+let civicValue = Object.values(civicCar);
+console.log(civicKey);
+console.log(civicValue);
+for (let i = 0; i < civicKey.length; i++) {
+  console.log(civicKey[i] + ": " + civicCar[civicKey[i]]);
+  // console.log(civicKey[i]);
+}
+
+let keyValue = Object.entries(civicCar);
+console.log(keyValue);
+for (let [key, value] of Object.entries(civicCar)) {
+  console.log(key + ":" + value);
 }
