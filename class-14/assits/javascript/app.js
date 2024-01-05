@@ -18,3 +18,23 @@ let sayHello = function () {
 };
 sayHello();
 sayHello();
+
+function taster(e, j) {
+  // return i + " " + i;
+  console.log(e, j);
+}
+let e = 2;
+let j = 5;
+taster(e + j);
+
+let userArray = [];
+function userInput(name, age, email) {
+  let finnal = `name: ${name}  Age: ${age}  Email: ${email}`;
+  userArray.push({ finnal });
+  // console.log(finnal);
+}
+let userName = prompt("Enter the Name");
+let userAge = +prompt("Enter the Age");
+let userEmail = prompt("Enter the Email");
+userInput(userName, userAge, userEmail);
+console.log(userArray);
