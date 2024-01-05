@@ -33,8 +33,10 @@ function userInput(name, age, email) {
   userArray.push({ finnal });
   // console.log(finnal);
 }
-let userName = prompt("Enter the Name");
-let userAge = +prompt("Enter the Age");
-let userEmail = prompt("Enter the Email");
-userInput(userName, userAge, userEmail);
+function userInputCall() {
+  let userName = prompt("Enter the Name");
+  let userAge = +prompt("Enter the Age");
+  let userEmail = prompt("Enter the Email");
+  userInput(userName, userAge, userEmail);
+}
 console.log(userArray);
