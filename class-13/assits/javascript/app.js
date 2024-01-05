@@ -324,3 +324,32 @@ for (let i = 0; i < 10; i++) {
     break;
   }
 }
+
+let allCar = [
+  {
+    model: "Golf",
+    color: "Black",
+    year: 2023,
+    make: "Toyota",
+  },
+  {
+    model: "Flog",
+    color: "Pink",
+    year: 1999,
+    make: "Civic",
+  },
+  {
+    model: "Foji",
+    color: "black",
+    year: 1999,
+    make: "Honda",
+  },
+];
+for (let i = 0; i < allCar.length; i++) {
+  if (allCar[i].year === 1999) {
+    if (allCar[i].color === "black") {
+      console.log("I Have Found New car", allCar[i]);
+      break;
+    }
+  }
+}
