@@ -40,3 +40,15 @@ function userInputCall() {
   userInput(userName, userAge, userEmail);
 }
 console.log(userArray);
+
+function paractice(para, para1) {
+  return para + para1;
+}
+let a = 10;
+let b = 5;
+let result = paractice(a, b);
+console.log(result);
+let i = 20;
+let s = 10;
+let result1 = paractice(i, s);
+console.log(result1);
