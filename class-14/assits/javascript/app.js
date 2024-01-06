@@ -70,5 +70,5 @@ function user() {
   let finalRondom = descriptive[rondomArray];
   let finalAnswer = `Name: ${userName} Descrriptive: ${finalRondom}`;
   console.log(finalAnswer);
+  // console.log(y);
 }
-user();
