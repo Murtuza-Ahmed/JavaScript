@@ -35,9 +35,10 @@ function userInput(name, age, email) {
 }
 function userInputCall() {
   let userName = prompt("Enter the Name");
+  let userNameLower = userName.toLowerCase();
   let userAge = +prompt("Enter the Age");
   let userEmail = prompt("Enter the Email");
-  userInput(userName, userAge, userEmail);
+  userInput(userNameLower, userAge, userEmail);
 }
 console.log(userArray);
 
