@@ -147,3 +147,22 @@ syHi("Hello", "Murtuza", "my Name", "is sheroz", "and", "you");
 // let finnal = arrowFunction(contaningNumber, contaningNumber1, operator);
 // console.log(finnal);
 // arrowFunction(contaningNumber, contaningNumber1, operator);
+
+let calculatorArray = [];
+for (let i = 1; i <= 10; i++) {
+  let value = i * 5;
+  let value1 = i * i;
+  let arrFun = (value, value1) => {
+    return value + value1;
+  };
+  let storeReturn = arrFun(value, value1);
+  calculatorArray.push(storeReturn);
+}
+console.log(calculatorArray);
+
+let resultArray = [];
+for (let i = 1; i < 10; i++) {
+  let result = (i, 2 * i);
+  resultArray.push(result);
+}
+console.log(resultArray);
