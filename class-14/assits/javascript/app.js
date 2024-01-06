@@ -120,3 +120,6 @@ function friend(a, ...b) {
   console.log(a, b);
 }
 friend("umer", "hamza", "raza", "sheroz");
+
+let syHi = (a, b, ...c) => console.log(a, b, c);
+syHi("Hello", "Murtuza", "my Name", "is sheroz", "and", "you");
