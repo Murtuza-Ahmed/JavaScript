@@ -123,3 +123,26 @@ friend("umer", "hamza", "raza", "sheroz");
 
 let syHi = (a, b, ...c) => console.log(a, b, c);
 syHi("Hello", "Murtuza", "my Name", "is sheroz", "and", "you");
+
+let contaningNumber = +prompt("Enter the Number");
+let contaningNumber1 = +prompt("Enter the NUmber");
+let operator = prompt("Enter the + | - | * | %");
+let arrowFunction = (value, value1, operation1) => {
+  if (operation1 === "-") {
+    return value - value1;
+    // console.log(value - value1);
+  } else if (operation1 === "+") {
+    return value + value1;
+    // console.log(value + value1);
+  } else if (operation1 === "*") {
+    return value * value1;
+    // console.log(value * value1);
+  } else if (operation1 === "%") {
+    return value % value1;
+  } else {
+    console.log("Please Check");
+  }
+};
+let finnal = arrowFunction(contaningNumber, contaningNumber1, operator);
+console.log(finnal);
+// arrowFunction(contaningNumber, contaningNumber1, operator);
