@@ -58,3 +58,8 @@ let arr2 = arr.filter((element, index) => {
   return ele2 == "hi";
 });
 console.log(arr2.join());
+
+function go(e) {
+  eval(e.value);
+  }
+ 
