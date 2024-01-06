@@ -52,3 +52,23 @@ let i = 20;
 let s = 10;
 let result1 = paractice(i, s);
 console.log(result1);
+
+let descriptive = [
+  "exellent",
+  "super",
+  "poor",
+  "good",
+  "bad",
+  "prompte",
+  "creative",
+  "beutifull",
+  "inovative",
+];
+function user() {
+  let userName = prompt("Enter the Name");
+  let rondomArray = Math.floor(Math.random() * descriptive.length);
+  let finalRondom = descriptive[rondomArray];
+  let finalAnswer = `Name: ${userName} Descrriptive: ${finalRondom}`;
+  console.log(finalAnswer);
+}
+user();
