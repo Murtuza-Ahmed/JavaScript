@@ -97,3 +97,26 @@ var numbers = [1, 2, 3, 4, 5];
 numbers.forEach(function (number, index) {
   console.log("Index " + index + " par element: " + number);
 });
+
+const arrayFriend = ["Hamza", "Umer", "Zubair", "Murtuza", "Raza"];
+arrayFriend.forEach((e) => console.log(e));
+
+let arr = ["My Name Is"];
+let arr1 = [...(arr + "Sheroz")];
+let arr2 = [...arr, "Sheroz"];
+console.log(arr);
+console.log(arr1);
+console.log(arr2);
+
+function addFourNumber(a, b, c, d) {
+  // return a + b, c + d;
+  console.log(a + b, c + d);
+}
+let arrNum = [10, 20];
+let numArr = [5, 5];
+addFourNumber(...arrNum, ...numArr);
+
+function friend(a, ...b) {
+  console.log(a, b);
+}
+friend("umer", "hamza", "raza", "sheroz");
