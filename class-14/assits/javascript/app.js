@@ -74,18 +74,18 @@ function user() {
   // console.log(y);
 }
 
-var num = 10;
-var num1 = 20;
-var operator = "+";
-function arrowFunction(value = 1, value1 = 1, operation) {
-  if (operation === "-") {
-    return value - value1;
-  } else if (operation === "+") {
-    return value + value1;
-  } else {
-    return value + value1;
-  }
-}
-console.log("Result with operator +:", arrowFunction(num, num1, operator));
-operator = "-";
-console.log("Result with operator -:", arrowFunction(num, num1, operator));
+// var num = 10;
+// var num1 = 20;
+// var operator = "+";
+// function arrowFunction(value = 1, value1 = 1, operation) {
+//   if (operation === "-") {
+//     return value - value1;
+//   } else if (operation === "+") {
+//     return value + value1;
+//   } else {
+//     return value + value1;
+//   }
+// }
+// console.log("Result with operator +:", arrowFunction(num, num1, operator));
+// operator = "-";
+// console.log("Result with operator -:", arrowFunction(num, num1, operator));
