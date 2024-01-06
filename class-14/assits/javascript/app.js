@@ -89,3 +89,11 @@ function user() {
 // console.log("Result with operator +:", arrowFunction(num, num1, operator));
 // operator = "-";
 // console.log("Result with operator -:", arrowFunction(num, num1, operator));
+
+// Misal array
+var numbers = [1, 2, 3, 4, 5];
+
+// forEach istemal kar ke har element ko print karna
+numbers.forEach(function (number, index) {
+  console.log("Index " + index + " par element: " + number);
+});
