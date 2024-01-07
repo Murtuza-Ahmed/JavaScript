@@ -67,3 +67,11 @@ let caps = "HI HOW ARE YOU?";
 let fixed_caps = caps.toLowerCase();
 let first_capital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1));
 console.log(first_capital);
+
+let lowStr = "I Love JavaScript";
+lowStr = lowStr.toLowerCase();
+let vowelsArr = ["a", "e", "i", "o", "u"];
+for (let i = 0; i < vowelsArr.length; i++) {
+    lowStr = lowStr.replaceAll(vowelsArr[i], i);
+}
+console.log(lowStr);
