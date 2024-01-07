@@ -1,0 +1,20 @@
+{
+  "name": "custom-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "murtuza",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "vite": "^3.1.4"
+  }
+}
