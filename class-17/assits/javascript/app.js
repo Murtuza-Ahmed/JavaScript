@@ -68,3 +68,12 @@ function magic() {
   let cssStyle = document.getElementById("shape").classList.add("aqua");
   console.log(cssStyle);
 }
+
+function changeAtr() {
+  let el = document.getElementById("new");
+  el.setAttribute("style", "background-color:red; border-radius:50%;");
+  el.setAttribute("id", "circle");
+  el.setAttribute("class", "squre");
+  console.dir(changeAtr);
+  console.log(changeAtr);
+}
