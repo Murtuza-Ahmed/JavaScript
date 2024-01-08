@@ -14,3 +14,35 @@ function displayResult(message, color) {
   outputDiv.textContent = message;
   outputDiv.style.color = color;
 }
+
+function revel(i) {
+  console.log(i)
+};
+
+function message(z) {
+  // return z.innerText;
+  console.log(z.innerText);
+  console.dir(z)
+}
+
+const exampleObject = {
+  name: 'John',
+  age: 25,
+  address: {
+    city: 'New York',
+    zip: '10001'
+  },
+  sayHello: function () {
+    console.log('Hello!');
+  },
+  sayFellow: function () {
+    console.log("fellow")
+  },
+  address: {
+    city: "karachi",
+    code: 456
+  }
+};
+// Using console.dir() to inspect the object
+console.dir(exampleObject);
+console.log(exampleObject);
