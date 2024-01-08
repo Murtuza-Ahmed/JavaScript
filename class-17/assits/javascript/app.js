@@ -63,3 +63,8 @@ function rainFall() {
   }
   console.log(divs)
 }
+
+function magic() {
+  let cssStyle = document.getElementById("shape").classList.add("aqua");
+  console.log(cssStyle);
+}
