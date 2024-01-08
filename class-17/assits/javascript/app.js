@@ -48,7 +48,7 @@ console.dir(exampleObject);
 console.log(exampleObject);
 
 function getMagic() {
-  let p = document.getElementById("getText").innerText;
+  let p = document.getElementById("getText");
   if (p.style.display === "none") {
     p.style.display === "block";
   } else {
