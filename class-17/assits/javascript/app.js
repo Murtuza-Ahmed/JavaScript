@@ -77,3 +77,5 @@ function changeAtr() {
   console.dir(changeAtr);
   console.log(changeAtr);
 }
+
+let friendListName = ["hamza", "umer", "zubair", "murtuza", "raza", "ahmed", "shahid", "pasha", "asgar", "ehsan"];
