@@ -79,3 +79,24 @@ function changeAtr() {
 }
 
 let friendListName = ["hamza", "umer", "zubair", "murtuza", "raza", "ahmed", "shahid", "pasha", "asgar", "ehsan"];
+let messageSelect = document.querySelector("#message");
+
+function build() {
+  let html = "<h1>My Friends Table</h1> <table>";
+  friendListName.forEach((item, index) => {
+    html += `<tr class="box" data-row="${index + 1}" data-name="${item}" onclick="getData(this)">
+            <td>${item}</td>`;
+    html += `<td>${index + 1}</td></tr>`;
+  });
+  html += "</table>";
+  console.log(html);
+  document.getElementById("output").innerHTML = html;
+}
+
+build();
+
+function getData(el) {
+  let temp = el.getAttribute("data-row");
+  let tempName = el.getAttribute("data-name");
+  messageSelect.innerHTML = `${tempName} is ROW: ${temp}`;
+}

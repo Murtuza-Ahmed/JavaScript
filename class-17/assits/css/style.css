@@ -26,3 +26,7 @@ p {
     height: 100px;
     background-color: yellowgreen;
 }
+
+.box {
+    background-color: #ffff00;
+}
