@@ -7,3 +7,16 @@ p {
     height: 30px;
     color: white;
 }
+
+.squre {
+    width: 10rem;
+    height: 10rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.aqua {
+    background-color: aqua;
+}
