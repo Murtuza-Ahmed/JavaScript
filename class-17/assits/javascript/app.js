@@ -50,8 +50,16 @@ console.log(exampleObject);
 function getMagic() {
   let p = document.getElementById("getText");
   if (p.style.display === "none") {
-    p.style.display === "block";
+    p.style.display = "block";
   } else {
-    p.style.display === "none"
+    p.style.display = "none"
   }
+}
+
+function rainFall() {
+  let divs = document.getElementsByTagName("div");
+  for (let i = 0; i < divs.length; i++) {
+    divs[i].style.background = divs[i].id;
+  }
+  console.log(divs)
 }
