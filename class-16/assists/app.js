@@ -92,3 +92,9 @@ let arrFill = friendArr.filter((value, index) => {
     return value, index, friendArr.indexOf(value) === index;
 })
 console.log(arrFill)
+
+let numberArr = [1, 2, 3, 4, 5, 6, 7, 8];
+let mapNumber = numberArr.map((x) => {
+    return x * 2;
+})
+console.log(mapNumber);
