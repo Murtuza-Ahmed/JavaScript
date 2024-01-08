@@ -20,3 +20,9 @@ p {
 .aqua {
     background-color: aqua;
 }
+
+.squre-add {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
