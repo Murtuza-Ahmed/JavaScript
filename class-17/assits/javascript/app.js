@@ -46,3 +46,12 @@ const exampleObject = {
 // Using console.dir() to inspect the object
 console.dir(exampleObject);
 console.log(exampleObject);
+
+function getMagic() {
+  let p = document.getElementById("getText").innerText;
+  if (p.style.display === "none") {
+    p.style.display === "block";
+  } else {
+    p.style.display === "none"
+  }
+}
