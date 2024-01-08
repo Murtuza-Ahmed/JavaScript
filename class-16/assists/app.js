@@ -75,3 +75,20 @@ for (let i = 0; i < vowelsArr.length; i++) {
     lowStr = lowStr.replaceAll(vowelsArr[i], i);
 }
 console.log(lowStr);
+
+var arrNum = [1, 2, 3, 4, 5];
+let mappedArr = arrNum.map((x) => {
+    return x * 2;
+})
+console.log(mappedArr);
+
+let friendArr = ["murtuza", "umer", "umer", "raza", "murtuza", "zubair", "zubair", "hamza", "raza", "hamza"];
+let filArr = friendArr.filter((value, index, array) => {
+    return value, index, array.indexOf(value) === index;
+})
+console.log(filArr);
+
+let arrFill = friendArr.filter((value, index) => {
+    return value, index, friendArr.indexOf(value) === index;
+})
+console.log(arrFill)
