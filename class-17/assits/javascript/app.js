@@ -125,3 +125,11 @@ function newElement() {
   document.body.appendChild(newEl);
 }
 newElement();
+
+let el = document.getElementById("name").addEventListener("click", createName);
+function createName() {
+  let userName = prompt("Enter Your Name");
+  let newElName = document.createElement("div");
+  newElName.innerText = userName;
+  document.getElementById("name").appendChild(newElName);
+}
