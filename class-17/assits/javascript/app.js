@@ -118,3 +118,10 @@ function colorChangeSqure() {
   this.style.background = `rgb(${red}, ${green}, ${blue})`;
   console.log(this)
 }
+
+function newElement() {
+  let newEl = document.createElement("div");
+  newEl.innerText = "Hello! Sheroz";
+  document.body.appendChild(newEl);
+}
+newElement();
