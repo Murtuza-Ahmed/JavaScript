@@ -1,3 +1,7 @@
+function newWinFun() {
+  console.log(this);
+}
+newWinFun();
 function checkEmail() {
   const emailInput = document.getElementById("emailInput");
   const email = emailInput.value.trim();
