@@ -100,3 +100,17 @@ function getData(el) {
   let tempName = el.getAttribute("data-name");
   messageSelect.innerHTML = `${tempName} is ROW: ${temp}`;
 }
+
+let setEl = document.getElementById("changeColor");
+setEl.setAttribute("class", "color-change");
+setEl.setAttribute("style", "width: 100px; height: 100px; background-color: aqua;");
+document.getElementById("changeColor").addEventListener("click", colorChangeSqure)
+function colorChangeSqure() {
+  setEl.style.borderRadius = "50%";
+  setEl.style.boxShadow = "1px 1px 9px black";
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+  this.style.background = `rgb(${red}, ${green}, ${blue})`;
+  console.log(this)
+}
