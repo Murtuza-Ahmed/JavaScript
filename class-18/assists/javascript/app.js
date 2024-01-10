@@ -47,3 +47,20 @@ console.log(val);
 //     }
 // }
 // checkNumber(valUserNumber);
+
+// let userNumber = parseInt(prompt("Enter The Number"));
+function checkNumber(val) {
+    try {
+        if (isNaN(val)) {
+            throw console.log("Not a Number");
+        } else {
+            throw console.log("Got a Number");
+        }
+    }
+    catch (error) {
+        console.log(`Erroe Mrssage: ${error}`);
+    } finally {
+        console.log("Function Compelte:", val);
+    }
+}
+checkNumber(2);
