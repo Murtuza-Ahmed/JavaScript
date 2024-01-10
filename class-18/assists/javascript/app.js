@@ -64,3 +64,24 @@ function checkNumber(val) {
     }
 }
 checkNumber(2);
+
+// let message = "Hello Storge!";
+// localStorage.setItem("value", message);
+// let stg = localStorage.getItem("value");
+// console.log(stg);
+// console.log(localStorage.getItem("string"));
+// console.log(window.localStorage.key(1));
+
+function save() {
+    let userNameSave = prompt("Enter The Name");
+    try {
+        if (typeof userNameSave !== "string") {
+            throw alert("Please Enter Your Name");
+        }
+    } catch (error) {
+        throw alert("message:", error);
+    }
+    let userNameSmall = userNameSave.toLowerCase();
+    let key = Math.floor(Math.random() * 100) + 1;
+    localStorage.setItem(key, userNameSmall);
+}
