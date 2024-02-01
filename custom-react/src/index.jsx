@@ -1,16 +1,21 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-// const App = () => {
-//     return React.createElement(
-//         "div",
-//         {},
-//         React.createElement("h1", {}, "Adopt Me!")
-//     );
-// };
+const Pet = (props) => {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <h1>{props.animal}</h1>
+      <h1>{props.breed}</h1>
+    </div>
+  );
+};
 const App = () => {
   return (
     <div>
       <h1>ScoobyDoo</h1>
+      <pet name="luna" animal="dog" breed="havaneese" />
+      <pet name="jacky" animal="dog" breed="german" />
+      <pet name="scooby" animal="dog" breed="buldog" />
     </div>
   );
 };
