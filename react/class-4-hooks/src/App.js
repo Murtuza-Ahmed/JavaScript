@@ -1,3 +1,4 @@
+import SearchParams from "./components/SearchParams";
 const Pet = (props) => {
     console.log('props', props)
     return React.createElement(
@@ -32,6 +33,7 @@ const App = () => {
             animal: "Dog",
             breed: "Bul Dog"
         }),
+        <SearchParams />
     );
 };
 
