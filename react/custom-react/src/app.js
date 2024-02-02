@@ -1,13 +1,13 @@
-const Pet = (props) => {
-    console.log('props', props)
-    return React.createElement(
-        "div",
-        {},
-        React.createElement("h1", {}, props.name),  //Jack , Scoby
-        React.createElement("h2", {}, props.animal),
-        React.createElement("h3", {}, props.breed),  // german , buldog
-    )
-}
+// const Pet = (props) => {
+//     console.log('props', props)
+//     return React.createElement(
+//         "div",
+//         {},
+//         React.createElement("h1", {}, props.name),  //Jack , Scoby
+//         React.createElement("h2", {}, props.animal),
+//         React.createElement("h3", {}, props.breed),  // german , buldog
+//     )
+// }
 
 
 // const App = () => {
