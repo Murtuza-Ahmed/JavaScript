@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import Pet from "./Pet";
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
-const BREEDS = ["havennes","buldog"];
+const BREEDS = [];
 function SearchParams() {
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
@@ -27,11 +26,11 @@ function SearchParams() {
   //     />;
   //   });
   // }
-  console.log(location);
-  console.log(animal);
-  console.log(breed);
-  console.log(pets);
-  console.log(BREEDS);
+  // console.log(location);
+  // console.log(animal);
+  // console.log(breed);
+  // console.log(pets);
+  // console.log(BREEDS);
   return (
     <div className="search-params">
       <form>
@@ -54,7 +53,7 @@ function SearchParams() {
             {/* <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="rabbit">Rabbit</option> */}
-            {ANIMALS.map((item, index) => (
+            {ANIMALS.map((item) => (
               <option value={item}>{item}</option>
             ))}
           </select>
@@ -67,7 +66,7 @@ function SearchParams() {
             value={breed}
             onChange={(e) => setBreed(e.target.value)}
           >
-            {BREEDS.map((item, index) => {
+            {BREEDS.map((item) => {
               return <option value={item}>{item}</option>;
             })}
           </select>
