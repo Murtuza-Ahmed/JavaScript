@@ -1,36 +1,29 @@
 import { useState, useEffect } from "react";
-const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
-const BREEDS = [];
+const Animals = ["bird", "cat", "dog", "rabbit", "reptile"];
+const Breeds = [];
+console.log(Breeds);
 function SearchParams() {
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
+  // CONSOLE.LOG
+  console.log(location);
+  console.log(animal);
+  console.log(breed);
+  console.log(pets);
+  // USE EFFECT (API CALL)
   useEffect(() => {
     requestPets();
   }, []);
   async function requestPets() {
-    const rest = await fetch(
+    const response = await fetch(
       "https://pets-v2.dev-apis.com/pets?animal=&us/&breed"
     );
-    const json = await rest.json();
-    setPets(json.pets);
+    const data = await response.json();
+    let actualData = data.pets;
+    setPets(actualData);
   }
-  // {
-  //   pets.map((pet) => {
-  //     <pet
-  //       name={pet.name}
-  //       animal={pet.animal}
-  //       breed={pet.breed}
-  //       key={pet.id}
-  //     />;
-  //   });
-  // }
-  // console.log(location);
-  // console.log(animal);
-  // console.log(breed);
-  // console.log(pets);
-  // console.log(BREEDS);
   return (
     <div className="search-params">
       <form>
@@ -53,7 +46,7 @@ function SearchParams() {
             {/* <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="rabbit">Rabbit</option> */}
-            {ANIMALS.map((item) => (
+            {Animals.map((item) => (
               <option value={item}>{item}</option>
             ))}
           </select>
@@ -62,17 +55,30 @@ function SearchParams() {
           <select
             name="breed"
             id="breed"
-            disabled={!BREEDS.length}
+            disabled={!Breeds.length}
             value={breed}
             onChange={(e) => setBreed(e.target.value)}
           >
-            {BREEDS.map((item) => {
+            {Breeds.map((item) => {
               return <option value={item}>{item}</option>;
             })}
           </select>
         </label>
         <button>Submit</button>
       </form>
+      {/* <div>
+        {pets.map((item) => {
+          console.log("Pets! Item", item);
+          return (
+            <div>
+              <h1>{item.name}</h1>
+              <h1>{item.animal}</h1>
+              <h1>{item.state}</h1>
+              <h1>{item.images}</h1>
+            </div>
+          );
+        })}
+      </div> */}
     </div>
   );
 }
