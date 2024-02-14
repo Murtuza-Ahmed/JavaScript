@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Button, Form } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 const Animals = ["bird", "cat", "dog", "rabbit", "reptile"];
 const Breeds = [];
 // console.log(Breeds);
@@ -8,10 +10,10 @@ function SearchParams() {
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
   // CONSOLE.LOG
-  console.log(location);
-  console.log(animal);
-  console.log(breed);
-  console.log(pets);
+  // console.log(location);
+  // console.log(animal);
+  // console.log(breed);
+  // console.log(pets);
   // USE EFFECT (API CALL)
   useEffect(() => {
     requestPets();
@@ -29,7 +31,7 @@ function SearchParams() {
     <div className="search-params">
       <form>
         <label htmlFor="location">
-          <input
+          <Form.Control
             type="text"
             id="location"
             value={location}
@@ -38,7 +40,7 @@ function SearchParams() {
           />
         </label>
         <label htmlFor="animal">
-          <select
+          <Form.Select
             name="animal"
             id="animal"
             value={animal}
@@ -50,10 +52,10 @@ function SearchParams() {
             {Animals.map((item) => (
               <option value={item}>{item}</option>
             ))}
-          </select>
+          </Form.Select>
         </label>
         <label htmlFor="breed">
-          <select
+          <Form.Select
             name="breed"
             id="breed"
             disabled={!Breeds.length}
@@ -63,19 +65,19 @@ function SearchParams() {
             {Breeds.map((item) => {
               return <option value={item}>{item}</option>;
             })}
-          </select>
+          </Form.Select>
         </label>
         <h1>{location}</h1>
-        <button>Submit</button>
+        <Button variant="dark">Submit</Button>
       </form>
       <div>
         {pets.map((item) => {
-          console.log("Pets! Item", item);
+          // console.log("Pets! Item", item);
           return (
             <div>
-              <h1>{item.name}</h1>
+              {/* <h1>{item.name}</h1>
               <h2>{item.animal}</h2>
-              <h3>{item.state}</h3>
+              <h3>{item.state}</h3> */}
             </div>
           );
         })}
