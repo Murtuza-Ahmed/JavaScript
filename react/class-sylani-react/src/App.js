@@ -1,42 +1,23 @@
-// const Pet = (props) => {
-//     console.log('props', props)
-//     return React.createElement(
-//         "div",
-//         {},
-//         React.createElement("h1", {}, props.name),  //Jack , Scoby
-//         React.createElement("h2", {}, props.animal),
-//         React.createElement("h3", {}, props.breed),  // german , buldog
-//     )
-// }
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import SearchParams from "./pages/SearchParams";
+import Details from "./pages/Details";
+function App() {
+  const queryClient = new QueryClient();
+  return (
+    <div>
+      <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
 
+          <h1>Adopt Me!</h1>
+          <Routes>
+            <Route path="/details/:id" element={<Details />} />
+            <Route path="/" element={<SearchParams />} />
+          </Routes>
+        </QueryClientProvider>
+      </BrowserRouter>
+    </div>
+  )
+}
 
-// const App = () => {
-//     return React.createElement(
-//         "div",
-//         {},
-//         React.createElement("h1", {}, "Adopt Me!"),
-//         React.createElement(Pet, {
-//             name: "Luna",
-//             animal: "Dog",
-//             breed: "Havaneese"
-//         }),
-//         React.createElement(Pet, {
-
-//             name: "Jacky",
-//             fullName: "Chain",
-//             animal: "Dog",
-//             breed: "German Shepherd"
-//         }),
-//         React.createElement(Pet, {
-//             name: "Scoby",
-//             animal: "Dog",
-//             breed: "Bul Dog"
-//         }),
-//     );
-// };
-
-
-
-// const container = document.getElementById("root");
-// const root = ReactDOM.createRoot(container);
-// root.render(React.createElement(App));
+export default App;
