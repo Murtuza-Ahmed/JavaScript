@@ -1,42 +1,67 @@
 import { useState, useEffect } from "react";
-const Animals = ["bird", "cat", "dog", "rabbit", "reptile"];
-const Breeds = [];
-// console.log(Breeds);
+import useBreedList from "../hooks/useBreedList";
+// import Pets from './Pets'
+import Results from "../components/Results";
+const ANIMALS = ["", "dog", "cat", "bird", "reptile", "rabbit"];
+
 function SearchParams() {
   const [location, setLocation] = useState("");
   const [animal, setAnimal] = useState("");
   const [breed, setBreed] = useState("");
   const [pets, setPets] = useState([]);
-  // CONSOLE.LOG
-  console.log(location);
-  console.log(animal);
-  console.log(breed);
-  console.log(pets);
-  // USE EFFECT (API CALL)
+  const [breeds] = useBreedList(animal);
+  console.log("breeds", breeds);
+
   useEffect(() => {
     requestPets();
   }, []);
+
   async function requestPets() {
     const response = await fetch(
-      "https://pets-v2.dev-apis.com/pets?animal=dog&location=us"
+      `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     const data = await response.json();
-    let actualData = data.pets;
-    setPets(actualData);
-    // console.log("Data", data.pets);
+    setPets(data.pets);
+    console.log("data", data);
+  }
+
+  // let newData = ['zubair' , "junaid" , "owais"]
+  // newData.map((item , ind) => console.log(item))
+
+  // pets.map((item , ind) => console.log(item.name))
+
+  console.log("location", location);
+  console.log("animal", animal);
+
+  console.log("pets", pets);
+
+  if (breeds.status === "loading") {
+    return (
+      <div>
+        {" "}
+        <h1>loading...</h1>
+      </div>
+    );
   }
   return (
     <div className="search-params">
-      <form>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           <input
             type="text"
             id="location"
+            name="location"
             value={location}
+            placeholder="Location"
             onChange={(e) => setLocation(e.target.value)}
-            placeholder="Enter Location"
           />
         </label>
+
         <label htmlFor="animal">
           <select
             name="animal"
@@ -44,42 +69,37 @@ function SearchParams() {
             value={animal}
             onChange={(e) => setAnimal(e.target.value)}
           >
-            {/* <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="rabbit">Rabbit</option> */}
-            {Animals.map((item) => (
-              <option value={item}>{item}</option>
+            {ANIMALS.map((item, ind) => (
+              <option value={item} key={ind}>
+                {item}
+              </option>
             ))}
           </select>
         </label>
+
         <label htmlFor="breed">
           <select
             name="breed"
             id="breed"
-            disabled={!Breeds.length}
             value={breed}
             onChange={(e) => setBreed(e.target.value)}
+            disabled={breeds.data.length < 1}
           >
-            {Breeds.map((item) => {
-              return <option value={item}>{item}</option>;
-            })}
+            {breeds.data.map((item, ind) => (
+              <option value={item} key={ind}>
+                {item}
+              </option>
+            ))}
           </select>
         </label>
-        <h1>{location}</h1>
-        <button>Submit</button>
+        <button type="submit">submit</button>
       </form>
-      <div>
-        {pets.map((item) => {
-          console.log("Pets! Item", item);
-          return (
-            <div>
-              <h1>{item.name}</h1>
-              <h2>{item.animal}</h2>
-              <h3>{item.state}</h3>
-            </div>
-          );
-        })}
-      </div>
+
+      <Results pets={pets} />
+      {/* {
+          pets.map((item , ind) => {
+          return <Pets name={item.name} animal={item.animal} breed={item.breed} location={item.state} key={item.id} images={item.images} />})
+         } */}
     </div>
   );
 }

@@ -8,7 +8,7 @@ function App() {
     <div>
       <BrowserRouter>
         <QueryClientProvider client={queryClient}>
-
+    
           <h1>Adopt Me!</h1>
           <Routes>
             <Route path="/details/:id" element={<Details />} />
