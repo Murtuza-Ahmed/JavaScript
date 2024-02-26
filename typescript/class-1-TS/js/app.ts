@@ -25,36 +25,43 @@
 // number.push(5);
 
 
-type personal = {
-    name: string;
-    age: number;
-    hobbies: string[];
-    email: string;
-};
+// type personal = {
+//     name: string;
+//     age: number;
+//     hobbies: string[];
+//     email: string;
+// };
 
-const personal: personal = {
-    name: "Sheroz",
-    age: 26,
-    hobbies: ["football", "travlling", "programming"],
-    email: ""
-}
-personal.email = "programmer@gmail.com";
-
-
-
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    email: string;
-} = {
-    name: "Sheroz",
-    age: 26,
-    hobbies: ["football", "travlling", "programming"],
-    email: ""
-}
-person.email = "programmer@gmail.com";
+// const personal: personal = {
+//     name: "Sheroz",
+//     age: 26,
+//     hobbies: ["football", "travlling", "programming"],
+//     email: ""
+// }
+// personal.email = "programmer@gmail.com";
 
 
-// TOPELS YE FIXED LENGTH KA ARRAY HOTA HE
+
+// const person: {
+//     name: string;
+//     age: number;
+//     hobbies: string[];
+//     email: string;
+// } = {
+//     name: "Sheroz",
+//     age: 26,
+//     hobbies: ["football", "travlling", "programming"],
+//     email: ""
+// }
+// person.email = "programmer@gmail.com";
+
+
+/**
+ * TUPLE YE FIXED LENGTH KA ARRAY HOTA HE
+ */
+
+const statusCode: [number, string] = [404, "Not Found"];
+const roles: [number, string] = [0, "Admin"];
+roles[1] = "sheroz";
+roles[0] = 4;
 
