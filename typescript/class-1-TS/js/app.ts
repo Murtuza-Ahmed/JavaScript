@@ -8,3 +8,4 @@
 // button.addEventListener("click", function () {
 //     console.log(add(+input1.value, +input2.value))
 // })
+
