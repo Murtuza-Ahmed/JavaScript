@@ -65,3 +65,12 @@ const roles: [number, string] = [0, "Admin"];
 roles[1] = "sheroz";
 roles[0] = 4;
 
+
+/**
+ *  JAB MALOOM NAI HO DATA ME KIA AYE GA NUMBER YA STRING
+ */
+
+let data: string | number;
+data = "raza";
+data = 10;
+
