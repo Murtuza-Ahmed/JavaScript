@@ -9,3 +9,52 @@
 //     console.log(add(+input1.value, +input2.value))
 // })
 
+/**
+ * number 5, 5.5, -7
+ * string "Apple"
+ * boolen true / false
+ */
+
+// let person: string;
+// person = "Sheikh";
+
+// let names: string[] = [];
+// names.push("Sheroz");
+
+// let number: number[] = [];
+// number.push(5);
+
+
+type personal = {
+    name: string;
+    age: number;
+    hobbies: string[];
+    email: string;
+};
+
+const personal: personal = {
+    name: "Sheroz",
+    age: 26,
+    hobbies: ["football", "travlling", "programming"],
+    email: ""
+}
+personal.email = "programmer@gmail.com";
+
+
+
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[];
+    email: string;
+} = {
+    name: "Sheroz",
+    age: 26,
+    hobbies: ["football", "travlling", "programming"],
+    email: ""
+}
+person.email = "programmer@gmail.com";
+
+
+// TOPELS YE FIXED LENGTH KA ARRAY HOTA HE
+
