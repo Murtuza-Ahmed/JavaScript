@@ -74,3 +74,7 @@ let data: string | number;
 data = "raza";
 data = 10;
 
+
+/**
+ * FUNCTION
+ */
