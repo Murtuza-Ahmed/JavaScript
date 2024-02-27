@@ -102,9 +102,9 @@
  * AGAR NAHI MALOOM TO (VOID) BATYEN GE
  */
 
-let myFunc: (x: number, y: number) => number;
-function add(num1: number, num2: number): number {
-    return num1 + num2;
-}
-myFunc = add;
-console.log(myFunc);
+// let myFunc: (x: number, y: number) => number;
+// function add(num1: number, num2: number): number {
+//     return num1 + num2;
+// }
+// myFunc = add;
+// console.log(myFunc);

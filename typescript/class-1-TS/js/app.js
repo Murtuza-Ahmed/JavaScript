@@ -59,20 +59,30 @@
 /**
  * FUNCTION
  */
-function myFun(num1, num2, condition) {
-    if (condition === "add") {
-        return num1 + num2;
-    }
-    else if (condition === "subtract") {
-        return num1 - num2;
-    }
+// function myFun(num1: number, num2: number, condition: "add" | "subtract") {
+//     if (condition === "add") {
+//         return num1 + num2
+//     } else if (condition === "subtract") {
+//         return num1 - num2
+//     }
+// }
+// console.log(myFun(5, 4, "add"));
+// let resultAdd = myFun(5, 9, "add");
+// let resultSub = myFun(5, 10, "subtract");
+// let elementAdd = document.createElement("p");
+// elementAdd.textContent = "Result Adding" + resultAdd;
+// document.body.appendChild(elementAdd);
+// let elementSub = document.createElement("p");
+// elementSub.textContent = "Result Subtract" + resultSub;
+// document.body.appendChild(elementSub);
+/**
+ * RETURN KARNE KE TIME
+ * NUMBER | STRING BATAYEN GE
+ * AGAR NAHI MALOOM TO (VOID) BATYEN GE
+ */
+var myFunc;
+function add(num1, num2) {
+    return num1 + num2;
 }
-console.log(myFun(5, 4, "add"));
-var resultAdd = myFun(5, 9, "add");
-var resultSub = myFun(25, 15, "subtract");
-var elementAdd = document.createElement("p");
-elementAdd.textContent = "Result Adding" +  resultAdd;
-document.body.appendChild(elementAdd);
-var elementSub = document.createElement("p");
-elementSub.textContent = "Result Subtract" +  resultSub;
-document.body.appendChild(elementSub);
+myFunc = add;
+console.log(myFunc);
