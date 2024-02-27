@@ -4,6 +4,12 @@
  */
 // const elem = <HTMLInputElement>document.getElementById("input")!;
 // elem.value;
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 /**
  * GENERIC
  * TYPE GENERIC <>
@@ -26,4 +32,25 @@ function merge(objA, objB) {
 }
 const merged = merge({ name: "sheroz" }, { age: 26 });
 console.log(merged.name);
+/**
+ * DECORATORS
+ * DECORATORS SIMPLE EK FUNCTION HE OR YE CLASS KE SATH USE HOGA
+ * CLASS KE SATH DECORATORS USE KARNE KYLYE EK SPECIFIC SIGN HOTA HE (@)
+ * (@) USKE BAD DECORATORS KA NAME
+ */
+function Logger(data) {
+    return function (_) {
+        console.log("loggin...." + data);
+    };
+}
+let Persone = class Persone {
+    constructor() {
+        this.name = "sheikh";
+        console.log("called");
+    }
+};
+Persone = __decorate([
+    Logger("data")
+], Persone);
+const sheroz = new Persone();
 //# sourceMappingURL=app.js.map

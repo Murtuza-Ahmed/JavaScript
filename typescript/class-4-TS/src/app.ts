@@ -28,3 +28,24 @@ function merge<T extends object, U extends object>(objA: T, objB: U) {
 
 const merged = merge({ name: "sheroz" }, { age: 26 });
 console.log(merged.name);
+
+/**
+ * DECORATORS
+ * DECORATORS SIMPLE EK FUNCTION HE OR YE CLASS KE SATH USE HOGA 
+ * CLASS KE SATH DECORATORS USE KARNE KYLYE EK SPECIFIC SIGN HOTA HE (@)
+ * (@) USKE BAD DECORATORS KA NAME
+ */
+
+function Logger(data: string) {
+    return function (_: Function) {
+        console.log("loggin...." + data);
+    }
+}
+@Logger("data")
+class Persone {
+    name = "sheikh";
+    constructor() {
+        console.log("called")
+    }
+}
+const sheroz = new Persone();
