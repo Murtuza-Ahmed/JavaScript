@@ -89,4 +89,15 @@ button.addEventListener("click", log.bind(null, "hello"));
 // volunteerStudent.willVolunteerIn = ["apple"]; // GETTER
 // console.log(volunteerStudent.willVolunteerIn); // SETTER
 // console.log(VolunteerStudent.id); // STATIC METHOD
+/**
+ * SINGLE TENSE
+ * SINGLE TENSE NO PART TYPESCRIPT JUST RULES PRGRAMMING LANGUGE
+ * SINGLE TENSE EK PATTERN JISKE ANDER KISI BHI CLASS KO EK TARAH SE STRICT KARTE HN SIRF EK OBJECT BANE
+ * EK HI BAR INITILIZE HO
+ */
+class Human {
+    // ISKA APNA OBJECT
+    constructor() { }
+}
+;
 //# sourceMappingURL=app.js.map

@@ -63,13 +63,13 @@ button.addEventListener("click", log.bind(null, "hello"))
 
 
 /**
- * INHERITANCE CLASSES KE ANDER EK CLASS KEY 
+ * INHERITANCE CLASSES KE ANDER EK CLASS KEY
  * USI CLASS KI BASE PE EK OR CLASS BANA LI JAYE
  * PURANE CLASS KI PROPERTY AJAYE
  * OR SATH ADDITINAL KUC OR KAM BHI KAR SKATE HN
  * EXTENDS CLASS KA CLONE BANATA HE
  * EXTANDS SE PHELE (CHILD) EXTANDS KE BAAD (PERENTS)
- * READONLY CHANGE NAI KAR SAKTE 
+ * READONLY CHANGE NAI KAR SAKTE
  */
 
 // class VolunteerStudent extends Student1 {
@@ -110,3 +110,17 @@ button.addEventListener("click", log.bind(null, "hello"))
 // volunteerStudent.willVolunteerIn = ["apple"]; // GETTER
 // console.log(volunteerStudent.willVolunteerIn); // SETTER
 // console.log(VolunteerStudent.id); // STATIC METHOD
+
+
+/**
+ * SINGLE TENSE
+ * SINGLE TENSE NO PART TYPESCRIPT JUST RULES PRGRAMMING LANGUGE
+ * SINGLE TENSE EK PATTERN JISKE ANDER KISI BHI CLASS KO EK TARAH SE STRICT KARTE HN SIRF EK OBJECT BANE
+ * EK HI BAR INITILIZE HO 
+ */
+
+class Human {
+    // ISKA APNA OBJECT
+
+    private constructor() { }
+};
