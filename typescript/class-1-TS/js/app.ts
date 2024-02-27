@@ -60,21 +60,38 @@
  * TUPLE YE FIXED LENGTH KA ARRAY HOTA HE
  */
 
-const statusCode: [number, string] = [404, "Not Found"];
-const roles: [number, string] = [0, "Admin"];
-roles[1] = "sheroz";
-roles[0] = 4;
+// const statusCode: [number, string] = [404, "Not Found"];
+// const roles: [number, string] = [0, "Admin"];
+// roles[1] = "sheroz";
+// roles[0] = 4;
 
 
 /**
  *  JAB MALOOM NAI HO DATA ME KIA AYE GA NUMBER YA STRING
  */
 
-let data: string | number;
-data = "raza";
-data = 10;
+// let data: string | number;
+// data = "raza";
+// data = 10;
 
 
 /**
  * FUNCTION
  */
+
+// function myFun(num1: number, num2: number, condition: "add" | "subtract") {
+//     if (condition === "add") {
+//         return num1 + num2
+//     } else if (condition === "subtract") {
+//         return num1 - num2
+//     }
+// }
+// console.log(myFun(5, 4, "add"));
+// let resultAdd = myFun(5, 9, "add");
+// let resultSub = myFun(5, 10, "subtract");
+// let elementAdd = document.createElement("p");
+// elementAdd.textContent = "Result Adding" + resultAdd;
+// document.body.appendChild(elementAdd);
+// let elementSub = document.createElement("p");
+// elementSub.textContent = "Result Subtract" + resultSub;
+// document.body.appendChild(elementSub);
