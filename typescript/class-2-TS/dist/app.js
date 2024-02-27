@@ -80,10 +80,13 @@ class VolunteerStudent extends Student1 {
         this.canVolunteerIn = skills;
     }
 }
+// STATIC METHOD
+VolunteerStudent.id = "abc-785";
 const volunteerStudent = new VolunteerStudent("raza", 99, "raza@gmail.com");
 volunteerStudent.addSkill("CSS");
 volunteerStudent.addVolunteerSkill("attandace");
 console.log(volunteerStudent.getSkill);
-volunteerStudent.willVolunteerIn = ["apple"];
-console.log(volunteerStudent.willVolunteerIn);
+volunteerStudent.willVolunteerIn = ["apple"]; // GETTER
+console.log(volunteerStudent.willVolunteerIn); // SETTER
+console.log(VolunteerStudent.id); // STATIC METHOD
 //# sourceMappingURL=app.js.map

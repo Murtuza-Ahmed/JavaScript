@@ -70,6 +70,9 @@ console.log(studentDetail1);
 
 class VolunteerStudent extends Student1 {
     private canVolunteerIn: string[] = [];
+    // STATIC METHOD
+    static id: string = "abc-785";
+
     constructor(name: string, readonly rollNo: number, email: string) {
         super(name, rollNo, email);
     };
@@ -98,5 +101,6 @@ const volunteerStudent = new VolunteerStudent("raza", 99, "raza@gmail.com");
 volunteerStudent.addSkill("CSS");
 volunteerStudent.addVolunteerSkill("attandace");
 console.log(volunteerStudent.getSkill);
-volunteerStudent.willVolunteerIn = ["apple"];
-console.log(volunteerStudent.willVolunteerIn);
+volunteerStudent.willVolunteerIn = ["apple"]; // GETTER
+console.log(volunteerStudent.willVolunteerIn); // SETTER
+console.log(VolunteerStudent.id); // STATIC METHOD
