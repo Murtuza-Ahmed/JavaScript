@@ -69,7 +69,7 @@ console.log(studentDetail1);
  */
 
 class VolunteerStudent extends Student1 {
-    canVolunteerIn: string[] = [];
+    private canVolunteerIn: string[] = [];
     constructor(name: string, readonly rollNo: number, email: string) {
         super(name, rollNo, email);
     };
@@ -77,9 +77,15 @@ class VolunteerStudent extends Student1 {
     addVolunteerSkill(skill: string) {
         this.canVolunteerIn.push(skill);
     }
+
+    // GETTER
+    get willVolunteerIn() {
+        return this.canVolunteerIn;
+    }
+
 }
 const volunteerStudent = new VolunteerStudent("raza", 99, "raza@gmail.com");
 volunteerStudent.addSkill("CSS");
 volunteerStudent.addVolunteerSkill("attandace");
 console.log(volunteerStudent.getSkill);
-console.log(volunteerStudent);
+console.log(volunteerStudent.willVolunteerIn);
