@@ -10,4 +10,9 @@ class Human {
     speak(sentence) {
     }
 }
+let a;
+a = 5;
+a = "raza";
+a = true;
+;
 //# sourceMappingURL=app.js.map
