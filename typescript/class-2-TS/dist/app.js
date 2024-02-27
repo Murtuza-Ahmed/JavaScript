@@ -47,4 +47,29 @@ const studentDetail1 = new Student("sheikh", 20, "sheroz@gmail.com");
 studentDetail1.addSkill("Typescript");
 console.log(studentDetail1.getSkill());
 console.log(studentDetail1);
+/**
+ * INHERITANCE CLASSES KE ANDER EK CLASS KEY
+ * USI CLASS KI BASE PE EK OR CLASS BANA LI JAYE
+ * PURANE CLASS KI PROPERTY AJAYE
+ * OR SATH ADDITINAL KUC OR KAM BHI KAR SKATE HN
+ * EXTENDS CLASS KA CLONE BANATA HE
+ * EXTANDS SE PHELE (CHILD) EXTANDS KE BAAD (PERENTS)
+ * READONLY CHANGE NAI KAR SAKTE
+ */
+class VolunteerStudent extends Student1 {
+    constructor(name, rollNo, email) {
+        super(name, rollNo, email);
+        this.rollNo = rollNo;
+        this.canVolunteerIn = [];
+    }
+    ;
+    addVolunteerSkill(skill) {
+        this.canVolunteerIn.push(skill);
+    }
+}
+const volunteerStudent = new VolunteerStudent("raza", 99, "raza@gmail.com");
+volunteerStudent.addSkill("CSS");
+volunteerStudent.addVolunteerSkill("attandace");
+console.log(volunteerStudent.getSkill);
+console.log(volunteerStudent);
 //# sourceMappingURL=app.js.map
