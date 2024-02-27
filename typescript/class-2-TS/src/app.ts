@@ -35,4 +35,24 @@ class Student {
 const studentDetail = new Student("sheroz", 26, "murtuza@gmail.com");
 studentDetail.addSkill("javascript");
 console.log(studentDetail.getSkill());
-console.log(studentDetail)
+console.log(studentDetail);
+
+/**
+ *  CLASSES SHORT HAND KEY
+ */
+class Student1 {
+    private skills: string[] = [];
+
+    constructor(public name: string, public rollNo: number, public email: string) { }
+    addSkill(skill: string) {
+        this.skills.push(skill)
+    }
+    getSkill() {
+        return this.skills;
+    }
+}
+
+const studentDetail1 = new Student("sheikh", 20, "sheroz@gmail.com");
+studentDetail1.addSkill("Typescript");
+console.log(studentDetail1.getSkill());
+console.log(studentDetail1);
