@@ -41,7 +41,17 @@ function Logger(data: string) {
         console.log("loggin...." + data);
     }
 }
+
+function FillHTML(template: string, id: string) {
+    return function (_: Function) {
+        const ele = document.getElementById(id);
+        if (ele) {
+            ele.innerHTML = template;
+        }
+    }
+}
 @Logger("data")
+@FillHTML("<b>this is my data</b>", "app")
 class Persone {
     name = "sheikh";
     constructor() {

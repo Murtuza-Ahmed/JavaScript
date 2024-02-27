@@ -43,6 +43,14 @@ function Logger(data) {
         console.log("loggin...." + data);
     };
 }
+function FillHTML(template, id) {
+    return function (_) {
+        const ele = document.getElementById(id);
+        if (ele) {
+            ele.innerHTML = template;
+        }
+    };
+}
 let Persone = class Persone {
     constructor() {
         this.name = "sheikh";
@@ -50,7 +58,8 @@ let Persone = class Persone {
     }
 };
 Persone = __decorate([
-    Logger("data")
+    Logger("data"),
+    FillHTML("<b>this is my data</b>", "app")
 ], Persone);
 const sheroz = new Persone();
 //# sourceMappingURL=app.js.map
