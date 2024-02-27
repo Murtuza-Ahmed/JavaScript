@@ -62,4 +62,17 @@ Persone = __decorate([
     FillHTML("<b>this is my data</b>", "app")
 ], Persone);
 const sheroz = new Persone();
+function add(a, b) {
+    if (typeof a === "number" && typeof b === "number") {
+        return a + b;
+    }
+    else if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    }
+    else {
+        throw Error("Type check kar");
+    }
+}
+add(1, 2).toFixed();
+add("abc", "bca").split("");
 //# sourceMappingURL=app.js.map

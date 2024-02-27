@@ -59,3 +59,25 @@ class Persone {
     }
 }
 const sheroz = new Persone();
+
+/**
+ * FUNCTION OVERLOAD
+ */
+
+type Combined = string | number;
+
+function add(a: string, b: number): string | number;
+function add(a: number, b: string): number | string;
+function add(a: string, b: string): string;
+function add(a: number, b: number): number;
+function add(a: Combined, b: Combined) {
+    if (typeof a === "number" && typeof b === "number") {
+        return a + b;
+    } else if (typeof a === "string" && typeof b === "string") {
+        return a + b;
+    } else {
+        throw Error("Type check kar");
+    }
+}
+add(1, 2).toFixed();
+add("abc", "bca").split("");
