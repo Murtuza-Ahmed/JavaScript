@@ -14,9 +14,9 @@ interface person {
 }
 class Human implements person {
 
-    constructor(public name: string) { }
+    constructor(public name: string, private id: string) { }
 
     speak(sentence: string): void {
-        
+
     }
 }
