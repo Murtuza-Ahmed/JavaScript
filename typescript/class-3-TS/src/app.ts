@@ -58,13 +58,58 @@ a = true
 /**
  * INTERFACE
  */
-interface Bird  {
-    name: string;
-    flySpeed: number;
+// interface Bird  {
+//     name: string;
+//     flySpeed: number;
+// }
+// interface Animal  {
+//     name: string;
+//     runSpeed: number;
+// }
+
+// interface Creature extends Bird, Animal { };
+
+
+/**
+ * TYPE GUIRED
+ * type guired ek check hota he 
+ */
+
+// type Bird = {
+//     name: string;
+//     flySpeed: number;
+// }
+// type Animal = {
+//     name: string;
+//     runSpeed: number;
+// }
+
+// type Creature = Bird | Animal;
+
+// function log(Creature: Creature) {
+//     console.log(Creature.name);
+//     if ("runSpeed" in Creature) {
+//         console.log(Creature.runSpeed)
+//     }
+// }
+// log({ name: "dog", runSpeed: 80 });
+
+class Bird {
+    constructor(public name: string, public flySpeed: number) { }
 }
-interface Animal  {
-    name: string;
-    runSpeed: number;
+class Animal {
+    constructor(public name: string, public runSpeed: number) { }
 }
 
-interface Creature extends Bird, Animal { };
+type Creature = Bird | Animal;
+
+function log(Creature: Creature) {
+    console.log(Creature.name);
+    if (Creature instanceof Animal) {
+        console.log("RunSpeed" + Creature.runSpeed)
+    }
+    if (Creature instanceof Bird) {
+        console.log("FlySpeed" + Creature.flySpeed)
+    }
+}
+log(new Animal("dog", 50));
