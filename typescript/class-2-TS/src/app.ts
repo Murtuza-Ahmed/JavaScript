@@ -83,9 +83,20 @@ class VolunteerStudent extends Student1 {
         return this.canVolunteerIn;
     }
 
+    // SETTER
+    set willVolunteerIn(skills: string[]) {
+        for (const skill of skills) {
+            if (!skill) {
+                return;
+            }
+        }
+        this.canVolunteerIn = skills;
+    }
+
 }
 const volunteerStudent = new VolunteerStudent("raza", 99, "raza@gmail.com");
 volunteerStudent.addSkill("CSS");
 volunteerStudent.addVolunteerSkill("attandace");
 console.log(volunteerStudent.getSkill);
+volunteerStudent.willVolunteerIn = ["apple"];
 console.log(volunteerStudent.willVolunteerIn);
