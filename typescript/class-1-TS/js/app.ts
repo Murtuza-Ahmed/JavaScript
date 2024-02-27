@@ -95,3 +95,15 @@
 // let elementSub = document.createElement("p");
 // elementSub.textContent = "Result Subtract" + resultSub;
 // document.body.appendChild(elementSub);
+
+/**
+ * RETURN KARNE KE TIME
+ * NUMBER | STRING BATAYEN GE
+ * AGAR NAHI MALOOM TO (VOID) BATYEN GE
+ */
+
+let myFunc: (x: number, y: number) => number;
+function add(num1: number, num2: number): number {
+    return num1 + num2;
+}
+myFunc = add;
