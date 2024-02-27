@@ -96,8 +96,19 @@ button.addEventListener("click", log.bind(null, "hello"));
  * EK HI BAR INITILIZE HO
  */
 class Human {
-    // ISKA APNA OBJECT
-    constructor() { }
+    constructor(name) {
+        this.name = name;
+    }
+    static getObject(name) {
+        if (this.object) {
+            return this.object;
+        }
+        this.object = new Human(name);
+        return this.object;
+    }
 }
 ;
+const sheroz = Human.getObject("sheroz");
+const sheikh = Human.getObject("sheikh");
+console.log(sheroz, sheikh);
 //# sourceMappingURL=app.js.map

@@ -121,6 +121,18 @@ button.addEventListener("click", log.bind(null, "hello"))
 
 class Human {
     // ISKA APNA OBJECT
+    static object: Human;
 
-    private constructor() { }
+    private constructor(private name: string) { }
+
+    static getObject(name: string) {
+        if (this.object) {
+            return this.object;
+        }
+        this.object = new Human(name);
+        return this.object;
+    }
 };
+const sheroz = Human.getObject("sheroz");
+const sheikh = Human.getObject("sheikh");
+console.log(sheroz, sheikh);
