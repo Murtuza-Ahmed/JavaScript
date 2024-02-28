@@ -1,4 +1,6 @@
-function List() {
-  return <div>Wellcome to my react list.</div>;
+function List({data}: {data: string}) {
+  return <div>
+    {data}
+  </div>;
 }
 export default List;
