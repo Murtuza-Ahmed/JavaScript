@@ -2,11 +2,12 @@ import "./App.css";
 import List from "./components/list/List";
 
 function App() {
-  const text = "Wellcome to my react App.";
+  const text = "Wellcome to my React App.";
   return (
     <div>
-      <List data={text} />
       <List data={"Hello"} />
+      <List data={text} />
+      <List data={"Continue..."} />
     </div>
   );
 }
