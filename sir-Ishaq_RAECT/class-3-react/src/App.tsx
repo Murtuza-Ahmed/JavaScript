@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Todo from "./components/todo/Todo";
 import Login from "./components/login/Login";
+import AuthContext from "./contexts/AuthContext";
 
 function App() {
   const [items, setItems] = useState<string[]>([
@@ -20,11 +21,13 @@ function App() {
   };
   return (
     <div>
-      {isAuth ? (
-        <Todo addItemHandler={addItemHandler} items={items} />
-      ) : (
-        <Login onLogin={setLoginHandler} />
-      )}
+      <AuthContext.Provider value={{ isLoggedIn: isAuth }}>
+        {isAuth ? (
+          <Todo addItemHandler={addItemHandler} items={items} />
+        ) : (
+          <Login onLogin={setLoginHandler} />
+        )}
+      </AuthContext.Provider>
     </div>
   );
 }
