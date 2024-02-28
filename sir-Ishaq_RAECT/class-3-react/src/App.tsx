@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Todo from "./components/todo/Todo";
+import Login from "./components/login/Login";
 
 function App() {
   const [items, setItems] = useState<string[]>([
@@ -10,6 +11,10 @@ function App() {
   ]);
   const [isAuth, setIsAuth] = useState<boolean>(false);
 
+  const setLoginHandler = (val: boolean) => {
+    setIsAuth(val);
+  };
+
   const addItemHandler = (itemText: string) => {
     setItems([...items, itemText]);
   };
@@ -18,7 +23,7 @@ function App() {
       {isAuth ? (
         <Todo addItemHandler={addItemHandler} items={items} />
       ) : (
-        <div>Plaese Login</div>
+        <Login onLogin={setLoginHandler} />
       )}
     </div>
   );
