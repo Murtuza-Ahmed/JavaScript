@@ -1,8 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import Todo from "./components/todo/Todo";
-import Login from "./components/login/Login";
 import AuthContext from "./contexts/AuthContext";
+import AuthHandler from "./components/authHandler/AuthHandler";
 
 function App() {
   const [items, setItems] = useState<string[]>([
@@ -16,13 +15,15 @@ function App() {
     setIsAuth(val);
   };
 
-  const addItemHandler = (itemText: string) => {
-    setItems([...items, itemText]);
-  };
+  // const addItemHandler = (itemText: string) => {
+  //   setItems([...items, itemText]);
+  // };
+  
   return (
     <div>
       <AuthContext.Provider value={{ isLoggedIn: isAuth }}>
-        {isAuth ? <Todo /> : <Login onLogin={setLoginHandler} />}
+        {/* {isAuth ? <Todo /> : <Login onLogin={setLoginHandler} />} */}
+        <AuthHandler setLoginHandler={setLoginHandler} />
       </AuthContext.Provider>
     </div>
   );
