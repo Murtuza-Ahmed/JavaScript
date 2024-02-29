@@ -1,33 +1,53 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { RouteObject } from "react-router-dom";
+import { Outlet, Link, useRoutes, useParams } from "react-router-dom";
 
 export default function App() {
+  let routes = [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        {
+          path: "/courses",
+          element: <Courses />,
+          children: [
+            { index: true, element: <CoursesIndex /> },
+            { path: "/courses/:id", element: <Course /> },
+          ],
+        },
+        { path: "*", element: <NoMatch /> },
+      ],
+    },
+  ];
+
+  // The useRoutes() hook allows you to define your routes as JavaScript objects
+  // instead of <Routes> and <Route> elements. This is really just a style
+  // preference for those who prefer to not use JSX for their routes config.
+  let element = useRoutes(routes);
+
   return (
     <div>
-      <h1>Basic Example</h1>
+      <h1>Route Objects Example</h1>
 
       <p>
-        This example demonstrates some of the core features of React Router
-        including nested <code>&lt;Route&gt;</code>s,{" "}
-        <code>&lt;Outlet&gt;</code>s, <code>&lt;Link&gt;</code>s, and using a
-        "*" route (aka "splat route") to render a "not found" page when someone
-        visits an unrecognized URL.
+        This example demonstrates how to use React Router's "route object" API
+        instead of the JSX API to configure your routes. Both APIs are
+        first-class. In fact, React Router actually uses the object-based API
+        internally by creating route objects from your{" "}
+        <code>&lt;Route&gt;</code>
+        elements.
       </p>
 
-      {/* Routes nest inside one another. Nested route paths build upon
-            parent route paths, and nested route elements render inside
-            parent route elements. See the note about <Outlet> below. */}
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+      <p>
+        React Router exposes a <code>useRoutes()</code> hook that allows you to
+        hook into the same matching algorithm that <code>&lt;Routes&gt;</code>{" "}
+        uses internally to decide which <code>&lt;Route&gt;</code> to render.
+        When you use this hook, you get back an element that will render your
+        entire route hierarchy.
+      </p>
 
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
-          <Route path="*" element={<NoMatch />} />
-        </Route>
-      </Routes>
+      {element}
     </div>
   );
 }
@@ -35,18 +55,13 @@ export default function App() {
 function Layout() {
   return (
     <div>
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
       <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/courses">Courses</Link>
           </li>
           <li>
             <Link to="/nothing-here">Nothing Here</Link>
@@ -56,9 +71,6 @@ function Layout() {
 
       <hr />
 
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
       <Outlet />
     </div>
   );
@@ -72,26 +84,61 @@ function Home() {
   );
 }
 
-function About() {
+function Courses() {
   return (
     <div>
-      <h2>About</h2>
+      <h2>Courses</h2>
+      <Outlet />
     </div>
   );
 }
 
-function Dashboard() {
+function CoursesIndex() {
   return (
     <div>
-      <h2>Dashboard</h2>
+      <p>Please choose a course:</p>
+
+      <nav>
+        <ul>
+          <li>
+            <Link to="react-fundamentals">React Fundamentals</Link>
+          </li>
+          <li>
+            <Link to="advanced-react">Advanced React</Link>
+          </li>
+          <li>
+            <Link to="react-router">React Router</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
+}
+
+function Course() {
+  let { id } = useParams();
+
+  return (
+    <div>
+      <h2>
+        Welcome to the {id.split("-").map(capitalizeString).join(" ")} course!
+      </h2>
+
+      <p>This is a great course. You're gonna love it!</p>
+
+      <Link to="/courses">See all courses</Link>
+    </div>
+  );
+}
+
+function capitalizeString(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
 function NoMatch() {
   return (
     <div>
-      <h2>Nothing to see here!</h2>
+      <h2>It looks like you're lost...</h2>
       <p>
         <Link to="/">Go to the home page</Link>
       </p>
