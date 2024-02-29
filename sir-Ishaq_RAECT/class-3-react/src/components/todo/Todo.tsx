@@ -1,12 +1,17 @@
 import AddForm from "../addForm/AddForm";
 import List from "../list/List";
+import { useState } from "react";
 
-type TodoProps = {
-  addItemHandler: (a: string) => void;
-  items: string[];
-};
-
-function Todo({ addItemHandler, items }: TodoProps) {
+function Todo() {
+  const [items, setItems] = useState<string[]>([
+    "Hello",
+    "Welcome",
+    "Good Bye",
+  ]);
+  const addItemHandler = (itemText: string) => {
+    setItems([...items, itemText]);
+  };
+  
   return (
     <>
       <div>

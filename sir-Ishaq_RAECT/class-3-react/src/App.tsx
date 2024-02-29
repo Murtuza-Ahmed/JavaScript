@@ -22,11 +22,7 @@ function App() {
   return (
     <div>
       <AuthContext.Provider value={{ isLoggedIn: isAuth }}>
-        {isAuth ? (
-          <Todo addItemHandler={addItemHandler} items={items} />
-        ) : (
-          <Login onLogin={setLoginHandler} />
-        )}
+        {isAuth ? <Todo /> : <Login onLogin={setLoginHandler} />}
       </AuthContext.Provider>
     </div>
   );
