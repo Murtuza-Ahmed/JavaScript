@@ -1,4 +1,8 @@
-function Login({ onLogin }: { onLogin: (a: boolean) => void }) {
+import { useContext } from "react";
+import AuthContext from "../../contexts/AuthContext";
+
+function Login() {
+  const authContext = useContext(AuthContext);
   return (
     <>
       <div>
@@ -7,7 +11,7 @@ function Login({ onLogin }: { onLogin: (a: boolean) => void }) {
           <button
             type="button"
             onClick={() => {
-              onLogin(true);
+              authContext.setAuthentication(true);
             }}
           >
             Login

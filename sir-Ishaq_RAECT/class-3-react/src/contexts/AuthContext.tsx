@@ -3,6 +3,7 @@ import { AuthData } from "../models/models";
 
 const defaultAuth: AuthData = {
   isLoggedIn: false,
+  setAuthentication: () => {},
 };
 
 const AuthContext = createContext<AuthData>(defaultAuth);

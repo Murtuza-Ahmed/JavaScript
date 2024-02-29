@@ -1,12 +1,11 @@
+import { useContext } from "react";
 import Login from "../login/Login";
 import Todo from "../todo/Todo";
+import AuthContext from "../../contexts/AuthContext";
 
-function AuthHandler({
-  setLoginHandler,
-}: {
-  setLoginHandler: (a: boolean) => void;
-}) {
-  return <>{false ? <Todo /> : <Login onLogin={setLoginHandler} />}</>;
+function AuthHandler() {
+  const authContext = useContext(AuthContext);
+  return <>{authContext.isLoggedIn ? <Todo /> : <Login />}</>;
 }
 
 export default AuthHandler;
