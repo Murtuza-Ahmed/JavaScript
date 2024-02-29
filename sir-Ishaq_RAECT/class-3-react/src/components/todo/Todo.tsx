@@ -1,9 +1,16 @@
 import AddForm from "../addForm/AddForm";
 import List from "../list/List";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logout from "../logout/Logout";
 
 function Todo() {
+  useEffect(() => {
+    const interval = setInterval(() => console.log("Running"), 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   const [items, setItems] = useState<string[]>([
     "Hello",
     "Welcome",
