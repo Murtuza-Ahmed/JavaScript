@@ -4,18 +4,19 @@ import "./App.css";
 import BasicExample from "./assets/Form";
 import Button from "react-bootstrap/esm/Button";
 import Counter from "./assets/Counter";
+import AntDesign from "./assets/AntDesign";
 
 function App() {
   // const [auth, setAuth] = useState("");
-  const [counter, setCounter] = useState(0);
-  const [name, setName] = useState("Raza");
-  useEffect(() => {
-    console.log("testing...");
-  }, []);
+  // const [counter, setCounter] = useState(0);
+  // const [name, setName] = useState("Raza");
+  // useEffect(() => {
+  //   console.log("testing...");
+  // }, []);
 
-  useEffect(() => {
-    console.log("testing2....");
-  }, [counter, name]);
+  // useEffect(() => {
+  //   console.log("testing2....");
+  // }, [counter, name]);
 
   return (
     <>
@@ -41,11 +42,11 @@ function App() {
           )}
         </div>
       </div> */}
-      <div>
+      {/* <div>
         <h1>{name}</h1>
-        <button onClick={() => setName("Ahmed")}>Name Update</button>
-        {/*  */}
-        {counter <= 10 && <Counter count={counter} />}
+        <button onClick={() => setName("Ahmed")}>Name Update</button> */}
+      {/*  */}
+      {/* {counter <= 10 && <Counter count={counter} />}
         <button onClick={() => setCounter(counter + 1)}>ADD</button>
         <button
           onClick={() => {
@@ -54,7 +55,8 @@ function App() {
         >
           SUB
         </button>
-      </div>
+      </div> */}
+      <AntDesign />
     </>
   );
 }
