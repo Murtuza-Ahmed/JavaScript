@@ -47,7 +47,13 @@ function App() {
         {/*  */}
         {counter <= 10 && <Counter count={counter} />}
         <button onClick={() => setCounter(counter + 1)}>ADD</button>
-        <button onClick={() => setCounter(counter - 1)}>SUB</button>
+        <button
+          onClick={() => {
+            counter > 0 && setCounter(counter - 1);
+          }}
+        >
+          SUB
+        </button>
       </div>
     </>
   );
