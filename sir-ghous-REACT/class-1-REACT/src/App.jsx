@@ -2,6 +2,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import BasicExample from "./assets/Form";
+import Button from "react-bootstrap/esm/Button";
 
 function App() {
   // const [name, setName] = useState("Sheroz");
@@ -23,7 +24,9 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col">
+            <h1>LOGGIN FORM</h1>
             <BasicExample />
+            <Button variant="link">Regester Now</Button>
           </div>
         </div>
       </div>
