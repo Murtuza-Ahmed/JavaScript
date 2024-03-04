@@ -72,3 +72,20 @@ let arr3 = [7, 8, 9];
 arr1 = arr1.concat(arr2);
 arr1 = [...arr1, ...arr2, ...arr3];
 console.log(arr1);
+
+/**
+ * DEFAULT PARAMETER
+ */
+// =============EC5===========
+function mult(a, b) {
+    b = (typeof b !== "undefined") ? b : 2
+    console.log(b)
+    console.log(a * b);
+}
+mult(8);
+
+// ============EC6================
+function add(a = 4, b = 4) {
+    console.log(a + b);
+}
+add(4, 10);
