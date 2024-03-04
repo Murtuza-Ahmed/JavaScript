@@ -1,4 +1,4 @@
-function checkScope(love) {
+function checkScopeVar(love) {
     if (love) {
         var fullName = "Sheroz"
         var lastName = "Sheikh"
@@ -6,4 +6,14 @@ function checkScope(love) {
     }
     console.log("My Name is" + lastName + " " + fullName)
 }
-checkScope(true);
+checkScopeVar(true);
+
+function checkScopeLet(love) {
+    if (love) {
+        let fullName = "Raza"
+        const lastName = "Ahmed"
+        console.log("My name is" + fullName + " " + lastName)
+    }
+    console.log("My name is" + fullName + " " + lastName)
+}
+checkScopeLet(true);
