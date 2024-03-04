@@ -37,10 +37,10 @@ console.log(`My name is ${fulName} ${lasNAme}`);
  */
 
 // ============EC5==========
-function sum(a, b) {
-    console.log(a, b);
-}
-sum(1, 2, 3, 4, 5);
+// function sum(a, b) {
+//     console.log(a, b);
+// }
+// sum(1, 2, 3, 4, 5);
 
 // ================EC6=================
 function fun(a, b, ...c) {
@@ -51,3 +51,24 @@ function fun(a, b, ...c) {
     console.log(c.indexOf("hockey"))
 }
 fun("circket", "football", "basketball", "hockey", "racegame");
+
+/**
+ * SPREAD PARAMETER
+ */
+
+function sum(a, b, c) {
+    console.log(a + b + c);
+}
+// sum(1, 2, 3);
+
+let arrVal = [1, 2, 3];
+console.log(...arrVal);
+// sum(...arrVal);
+// sum.apply(null, arrVal);
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = [7, 8, 9];
+arr1 = arr1.concat(arr2);
+arr1 = [...arr1, ...arr2, ...arr3];
+console.log(arr1);
