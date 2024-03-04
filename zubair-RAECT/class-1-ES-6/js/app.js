@@ -89,3 +89,22 @@ function add(a = 4, b = 4) {
     console.log(a + b);
 }
 add(4, 10);
+
+/**
+ * PROMISES
+ */
+const probj = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let rollNo = [1, 2, 3, 4, 5, 6];
+        // console.log(rollNo);
+        resolve(rollNo);
+         reject("error with comunication with database");
+    }, 2000)
+})
+console.log(probj);
+
+probj.then((roll) => {
+    console.log("Roll", roll);
+}).catch((error) => {
+    console.log("Error", error);
+});
