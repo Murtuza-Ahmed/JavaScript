@@ -1,12 +1,10 @@
 import { useState } from "react";
-
-const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
+import Breed from "./Breed";
+import Animal from "./Animal";
 
 const SearchParams = () => {
   const [location, updateLocation] = useState("");
-  const [animal, updateAnimal] = useState("");
   console.log(location);
-  console.log(animal);
 
   return (
     <>
@@ -22,25 +20,8 @@ const SearchParams = () => {
               onChange={(e) => updateLocation(e.target.value)}
             />
           </label>
-          <label htmlFor="animal">
-            Animal
-            <select
-              id="animal"
-              value={animal}
-              onChange={(e) => {
-                updateAnimal(e.target.value);
-              }}
-              onBlur={(e) => {
-                updateAnimal(e.target.value);
-              }}
-            >
-              {ANIMALS.map((animal) => (
-                <option key={animal} value={animal}>
-                  {animal}
-                </option>
-              ))}
-            </select>
-          </label>
+          <Animal />
+          <Breed />
           <button>Submit</button>
         </form>
       </div>
