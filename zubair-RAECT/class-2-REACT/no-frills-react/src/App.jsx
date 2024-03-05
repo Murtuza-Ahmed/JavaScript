@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Pet from "./components/Pet";
+import SearchParams from "./components/SearchParams";
+// import Pet from "./components/Pet";
 
 const App = () => {
   return (
@@ -8,7 +9,9 @@ const App = () => {
       <div>
         <h1>Adopt Me!</h1>
       </div>
-      <Pet name="Luna" animal="Dog" breed="Haveenes" />
+      <SearchParams />
+
+      {/* <Pet name="Luna" animal="Dog" breed="Haveenes" /> */}
     </>
   );
 };
