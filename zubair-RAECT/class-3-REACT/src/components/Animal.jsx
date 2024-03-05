@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Breed from "./Breed";
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const Animal = () => {
@@ -26,6 +27,8 @@ const Animal = () => {
           ))}
         </select>
       </label>
+
+      <Breed />
     </>
   );
 };

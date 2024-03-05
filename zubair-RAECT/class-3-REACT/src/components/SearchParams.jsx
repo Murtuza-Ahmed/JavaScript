@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Breed from "./Breed";
 import Animal from "./Animal";
 
 const SearchParams = () => {
@@ -21,7 +20,6 @@ const SearchParams = () => {
             />
           </label>
           <Animal />
-          <Breed />
           <button>Submit</button>
         </form>
       </div>
