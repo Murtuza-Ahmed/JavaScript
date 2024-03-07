@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+// import { createRoot } from "react-dom/client";
 import SearchParams from "./components/SearchParams";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Details from "./components/Details";
@@ -24,8 +24,8 @@ const App = () => {
     </div>
   );
 };
-
-const container = document.getElementById("root");
-const root = createRoot(container);
-root.render(<App />);
+export default App;
+// const container = document.getElementById("root");
+// const root = createRoot(container);
+// root.render(<App />);
 // render(<App />, document.getElementById("root"));
