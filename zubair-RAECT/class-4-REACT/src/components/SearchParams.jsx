@@ -17,7 +17,7 @@ const SearchParams = () => {
 
   async function requestPet() {
     const petData = await fetch(
-      "https://pets-v2.dev-apis.com/pets?animal=dog&location=us"
+      "http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}"
     );
     const convertJson = await petData.json();
     setPets(convertJson.pets);
