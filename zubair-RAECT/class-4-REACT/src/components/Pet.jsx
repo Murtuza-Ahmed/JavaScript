@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Pets({ name, animal, breed, location, images, id }) {
   let hero = "http://pets-images.dev-apis.com/pets/none.jpg";

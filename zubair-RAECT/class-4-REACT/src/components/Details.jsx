@@ -5,6 +5,7 @@ import fetchPet from "../hooks/fetchPets";
 const Details = () => {
   const { id } = useParams();
   const results = useQuery(["details", id], fetchPet);
+
   if (results.isLoading) {
     return (
       <div className="loading-pane">
@@ -12,8 +13,8 @@ const Details = () => {
       </div>
     );
   }
+
   const pet = results.data.pets[0];
-  console.log(pet);
 
   return (
     <div className="details">
@@ -26,4 +27,5 @@ const Details = () => {
     </div>
   );
 };
+
 export default Details;
