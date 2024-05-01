@@ -13,3 +13,20 @@ document.write("<h1>Helo World</h1> <p>SMIT</p>");
 
 // var alert = alert(true);
 // alert(alert);
+
+// var num = 10;
+// num++;
+// num++;
+// num--;
+// alert(num);
+
+// var num = 10;
+// alert(num++);
+// alert(num);
+
+// var num = 10;
+// alert(++num);
+// alert(num);
+
+var num = (2 + 2) * 4 - 5 * 2;
+console.log(num);
