@@ -38,3 +38,11 @@ var num = (a++ + --c) * b++ - --a * c++;
 //       (2   +   4)  *   4   -   2   *   4
 console.log(num);
 console.log(a++, --c, b++, --a, c++);
+
+var a = 5;
+var b = "5";
+if (a !== b) {
+    console.log("Not Equal");
+} else {
+    console.log("equal");
+}
