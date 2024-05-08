@@ -30,7 +30,7 @@ const SearchParams = () => {
             }}
             onBlur={(e) => {
               updateAnimal(e.target.value);
-              setBreed("");
+              // setBreed("");
             }}
           >
             {/* <option /> */}
