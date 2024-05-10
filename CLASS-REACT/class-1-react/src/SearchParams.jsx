@@ -7,6 +7,7 @@ const SearchParams = () => {
   const [animal, updateAnimal] = useState("");
 
   console.log(location);
+  console.log(animal);
   return (
     <div className="search-params">
       <form>
