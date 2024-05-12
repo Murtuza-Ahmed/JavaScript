@@ -4,13 +4,21 @@ const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
   const [location, updateLocation] = useState("");
+  // let locationArr = useState("");
+  // let location = locationArr[0];
+  // let setLocation = locationArr[1];
+
   const [animal, updateAnimal] = useState("");
+  const [breed, setBreed] = useState("");
+  const breeds = [];
 
   console.log(location);
   console.log(animal);
+  console.log(breed);
   return (
     <div className="search-params">
       <form>
+        {/* LOCATION */}
         <label htmlFor="location">
           Location
           <input
@@ -20,6 +28,7 @@ const SearchParams = () => {
             onChange={(e) => updateLocation(e.target.value)}
           />
         </label>
+        {/* ANIMALS */}
         <label htmlFor="animal">
           Animal
           <select
@@ -38,6 +47,24 @@ const SearchParams = () => {
             {ANIMALS.map((animal) => (
               <option key={animal} value={animal}>
                 {animal}
+              </option>
+            ))}
+          </select>
+        </label>
+        {/* BREEDS */}
+        <label htmlFor="breed">
+          Breed
+          <select
+            disabled={!breeds.length}
+            id="breed"
+            value={breed}
+            onChange={(e) => setBreed(e.target.value)}
+            onBlur={(e) => setBreed(e.target.value)}
+          >
+            <option />
+            {breeds.map((breed) => (
+              <option key={breed} value={breed}>
+                {breed}
               </option>
             ))}
           </select>
