@@ -1,4 +1,6 @@
 import React from "react";
+import { StrictMode } from "react";
+// import { render } from "react-dom";
 import { createRoot } from "react-dom/client";
 // import Pet from "./Pet";
 import SearchParams from "./SearchParams";
@@ -15,4 +17,15 @@ const App = () => {
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
+// render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+//   document.getElementById("root")
+// );
