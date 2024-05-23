@@ -49,22 +49,23 @@ console.log(addition(10));
 // 
 
 function nameFunc(fullName) {
-    console.log("fullname", fullName)
     return function (lastName) {
-        console.log("lastname", lastName)
-        return fullName + " " + lastName
-        // return function (otherName) {
-        //     console.log("other", otherName)
-        //     return fullName + " " + lastName + " " + otherName
-        // }
+        return function (otherName) {
+            return function (num) {
+                return fullName + " " + lastName + " " + otherName + " " + num
+            }
+        }
     }
 }
 
 const userName = nameFunc("Raza");
-console.log(userName("Ahmed"));
-// console.log(userName("sheroz"));
+const userLastName = userName("Ahmed");
+const totalUserName = userLastName("Sheroz");
+const number = totalUserName(5);
+console.log(number);
+console.log(number);
 
-// 
+//
 
 // function fetchData(url) {
 //     let data = null;
