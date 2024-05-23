@@ -2,16 +2,29 @@ import React from "react";
 import { StrictMode } from "react";
 // import { render } from "react-dom";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 // import Pet from "./Pet";
 import SearchParams from "./SearchParams";
+import Detail from "./Detail";
 
 const App = () => {
   return (
-    <div>
-      <h1>Adopt Me!</h1>
+    <>
+      <BrowserRouter>
+        <header>
+          <Link to={"/"}>
+            <h1>Adopt Me!</h1>
+          </Link>
+        </header>
+
+        <Routes>
+          <Route path="/details/:id" element={<Detail />} />
+          <Route path="/" element={<SearchParams />} />
+        </Routes>
+      </BrowserRouter>
+
       {/* <Pet name="Luna" animal="Dog" breeds="Havanese" /> */}
-      <SearchParams />
-    </div>
+    </>
   );
 };
 
