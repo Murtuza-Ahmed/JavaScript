@@ -76,3 +76,57 @@ console.log(number);
 // }
 
 // fetchData('https://api.example.com/data');
+
+
+//  ARRAY   PROTOTYPE
+
+Array.prototype.last = function () {
+    if (this.length === 0) {
+        return -1
+    } else {
+        return this[this.length - 1]
+    }
+}
+
+const arr = [1, 2, 3, 4];
+console.log(arr.last());
+
+
+
+
+
+
+//  ASYNCHRONOUS FUNCTION
+
+async function sleep(milis) {
+    return new Promise((resolve) => setTimeout(resolve, milis))
+}
+
+let t = Date.now();
+sleep(100).then(() => console.log(Date.now() - t));
+
+
+// NEW PROMISE FUNCTION
+async function call(milli, should = true) {
+    // return new Promise((resolve, reject) => should ? setTimeout(reject, milli) : setTimeout(resolve, milli));
+    return new Promise((resolve, reject) => {
+        if (should) {
+            setTimeout(reject, milli)
+        } else {
+            setTimeout(resolve, milli)
+        }
+    })
+}
+let date = Date.now();
+call(50, false).then(() => console.log("PromiseResolve", Date.now() - date)).catch(() => console.log("PromiseReject", Date.now() - date));
+
+
+// SET TIME OUT FUNCTION BUTTON
+let timeOut;
+function timeFunc() {
+    timeOut = setTimeout(delayFunc, 3000);
+}
+
+function delayFunc() {
+    alert("MILLISECOND" + " " + "hello")
+}
