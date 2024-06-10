@@ -77,24 +77,5 @@ svg {
 }
 
 /* BOILER PALTE END */
-.main_header {
-    background-color: #f36e25;
-}
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.header_padding {
-    padding: 1rem 0;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 0 0 35%;
-    flex-basis: 35%;
-}
+/* HEADER STYLE START */
