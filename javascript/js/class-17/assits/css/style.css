@@ -1,0 +1,32 @@
+p {
+    display: none;
+}
+
+.rainbow div {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.squre {
+    width: 10rem;
+    height: 10rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.squre-add {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+
+.box {
+    background-color: #ffff00;
+}
