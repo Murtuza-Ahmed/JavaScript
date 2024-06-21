@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ol,
+ul,
+a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #f6f6f6;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.4;
+  margin: 0;
+  color: #fde4c3;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+#top {
+  background-color: #302a18;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-padding {
+  padding: 2rem 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.row .column:nth-child(1) {
+  flex-basis: 15%;
+}
+.row .column:nth-child(2) {
+  flex-basis: 60%;
+}
+.row .column:nth-child(2) ul {
+  display: flex;
+  align-items: center;
+}
+.row .column:nth-child(2) ul li {
+  margin: 0 2rem;
+}
+.row .column:nth-child(2) ul li a {
+  color: #fde4c3;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.row .column:nth-child(2) ul li a:hover {
+  color: #f6f6f6;
+}
+.row .column:nth-child(3) {
+  flex-basis: 25%;
+}
+
+.column .icon img {
+  width: 20px;
+}/*# sourceMappingURL=style.css.map */

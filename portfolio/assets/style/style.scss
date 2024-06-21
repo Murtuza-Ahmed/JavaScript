@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$-text-color: #f6f6f6;
+$-title-color: #fde4c3;
+$-bg-color: #302a18;
+$-backg-color: #1c1c1c;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ol,
+ul,
+a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: $-text-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.4;
+  margin: 0;
+  color: $-title-color;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+// /* BOILER PALTE END */
+
+@mixin container($space: 90%, $mar: 0 auto) {
+  width: $space;
+  margin: $mar;
+}
+
+@mixin sec-padding($padd: 1rem 0) {
+  padding: $padd;
+}
+
+// HEADER START
+
+#top {
+  background-color: $-bg-color;
+}
+
+.container {
+  @include container();
+}
+
+.nav-padding {
+  @include sec-padding(2rem 0);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  & .column:nth-child(1) {
+    flex-basis: 15%;
+  }
+  & .column:nth-child(2) {
+    flex-basis: 60%;
+    & ul {
+      display: flex;
+      align-items: center;
+      & li {
+        margin: 0 2rem;
+        & a {
+          color: $-title-color;
+          font-weight: 500;
+          font-size: 0.8rem;
+          letter-spacing: 0.1rem;
+          &:hover {
+            color: $-text-color;
+          }
+        }
+      }
+    }
+  }
+  & .column:nth-child(3) {
+    flex-basis: 25%;
+  }
+}
+
+.column .icon img {
+  width: 20px;
+}
