@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-$-text-color: #fff;
-$-icon-color: #06f7d7;
-$-bg-color: #302a18;
+$-text-color: #f6f6f6;
+$-title-color: #ffe6bc;
+$-icon-color: #ffcb74;
+$-top-bg-color: #2f2f2f;
 $-backg-color: #1c1c1c;
 
 *,
@@ -74,10 +75,10 @@ body {
   padding: $padd;
 }
 
-// HEADER START
+// Navbar START
 
 #top {
-  background-color: $-bg-color;
+  background-color: $-icon-color;
 }
 
 .container {
@@ -88,36 +89,14 @@ body {
   @include sec-padding(1rem 0);
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  & .column:nth-child(1) {
-    flex-basis: 15%;
-  }
-  & .column:nth-child(2) {
-    flex-basis: 60%;
-    & ul {
-      display: flex;
-      align-items: center;
-      & li {
-        margin: 0 2rem;
-        & a {
-          color: $-title-color;
-          font-weight: 500;
-          font-size: 0.8rem;
-          letter-spacing: 0.1rem;
-          &:hover {
-            color: $-text-color;
-          }
-        }
-      }
-    }
-  }
-  & .column:nth-child(3) {
-    flex-basis: 25%;
-  }
+#main {
+  background-color: $-top-bg-color;
 }
 
-.column .icon img {
-  width: 20px;
+.row {
+  display: flex;
+  & .column {
+    flex: 1;
+    flex-basis: 20%;
+  }
 }
