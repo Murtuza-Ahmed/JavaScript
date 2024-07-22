@@ -77,26 +77,64 @@ body {
 
 // Navbar START
 
-#top {
-  background-color: $-icon-color;
-}
-
-.container {
-  @include container();
-}
-
-.nav-padding {
-  @include sec-padding(1rem 0);
-}
-
 #main {
   background-color: $-top-bg-color;
 }
-
-.row {
-  display: flex;
-  & .column {
-    flex: 1;
-    flex-basis: 20%;
+.container {
+  @include container();
+  .nav-padding {
+    @include sec-padding(1rem 0);
+    .row {
+      display: flex;
+      flex-basis: 100%;
+      & .column:nth-child(1) {
+        flex: 1;
+        flex-basis: 20%;
+      }
+      & .column:nth-child(2) {
+        flex: 1;
+        flex-basis: 60%;
+        & ul {
+          display: flex;
+          justify-content: flex-start;
+          & li {
+            margin: 0 2rem;
+            & a {
+              text-decoration: none;
+              color: $-text-color;
+            }
+          }
+        }
+      }
+      & .column:nth-child(3) {
+        flex: 1;
+        flex-basis: 20%;
+        & .menu-bars {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          cursor: pointer;
+          float: inline-end;
+          & .top {
+            background-color: $-icon-color;
+            max-width: 40px;
+            height: 5px;
+            border-radius: 2px;
+          }
+          & .middle {
+            background-color: $-icon-color;
+            width: 40px;
+            height: 5px;
+            border-radius: 2px;
+          }
+          & .bottom {
+            background-color: $-icon-color;
+            width: 40px;
+            height: 5px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
   }
 }

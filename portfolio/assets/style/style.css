@@ -58,27 +58,66 @@ body {
   font-size: 1rem;
 }
 
-#top {
-  background-color: #ffcb74;
+#main {
+  background-color: #2f2f2f;
 }
 
 .container {
   width: 90%;
   margin: 0 auto;
 }
-
-.nav-padding {
+.container .nav-padding {
   padding: 1rem 0;
 }
-
-#main {
-  background-color: #2f2f2f;
-}
-
-.row {
+.container .nav-padding .row {
   display: flex;
+  flex-basis: 100%;
 }
-.row .column {
+.container .nav-padding .row .column:nth-child(1) {
   flex: 1;
   flex-basis: 20%;
+}
+.container .nav-padding .row .column:nth-child(2) {
+  flex: 1;
+  flex-basis: 60%;
+}
+.container .nav-padding .row .column:nth-child(2) ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.container .nav-padding .row .column:nth-child(2) ul li {
+  margin: 0 2rem;
+}
+.container .nav-padding .row .column:nth-child(2) ul li a {
+  text-decoration: none;
+  color: #f6f6f6;
+}
+.container .nav-padding .row .column:nth-child(3) {
+  flex: 1;
+  flex-basis: 20%;
+}
+.container .nav-padding .row .column:nth-child(3) .menu-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+  float: inline-end;
+}
+.container .nav-padding .row .column:nth-child(3) .menu-bars .top {
+  background-color: #ffcb74;
+  max-width: 40px;
+  height: 5px;
+  border-radius: 2px;
+}
+.container .nav-padding .row .column:nth-child(3) .menu-bars .middle {
+  background-color: #ffcb74;
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
+}
+.container .nav-padding .row .column:nth-child(3) .menu-bars .bottom {
+  background-color: #ffcb74;
+  width: 40px;
+  height: 5px;
+  border-radius: 2px;
 }/*# sourceMappingURL=style.css.map */
