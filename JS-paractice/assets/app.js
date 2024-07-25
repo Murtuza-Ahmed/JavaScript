@@ -38,10 +38,45 @@ buttonCheckPalindrom.addEventListener("click", () => {
     acceptInput === strJoin ? alert('welldone') : alert("no't Palindrom");
 });
 
+// START
+
+const inputField = document.getElementById("palindrom");
+const palindromCheck = document.getElementById("btn-palindrom");
+const updateValue = document.getElementById("bool");
+
+
+function checkPalindrom(palindromValue, checkField) {
+    if (checkField === palindromValue) {
+        const node = document.createElement("p");
+        const textNode = document.createTextNode("palindrom word");
+        node.appendChild(textNode);
+        updateValue.appendChild(node);
+        inputField.value = ""
+    } else {
+        const node = document.createElement("p");
+        const textNode = document.createTextNode("palindrom no't");
+        node.appendChild(textNode);
+        updateValue.appendChild(node);
+        inputField.value = ""
+    }
+}
+
+palindromCheck.addEventListener("click", function () {
+    const acceptField = inputField.value;
+    if (acceptField) {
+        const valueSplit = acceptField.split("");
+        const valueReverse = valueSplit.reverse();
+        const valueJoin = valueReverse.join("")
+        checkPalindrom(valueJoin, acceptField);
+    } else {
+        alert("filed is empty")
+    }
+})
+
 /**
  * FIND LARGEST NUMBER
  */
-
+// START
 const arrNumber = [1, 2, 3, 4, 5];
 
 const buttonCheckNumber = document.getElementById("check-number-1");
@@ -50,7 +85,7 @@ buttonCheckNumber.addEventListener("click", function () {
     const largeNumber = Math.max(...arrNumber);
     console.log('large-number', largeNumber);
 });
-
+// START
 const arrNum = [22, 45, 89, 40, 12, 85, 35, 3, 78];
 
 const buttonCheckNumber2 = document.getElementById("check-number-2");
@@ -64,7 +99,7 @@ buttonCheckNumber2.addEventListener("click", function () {
     console.log(callFunc)
 });
 
-
+// START
 const arrNum1 = [22, 45, 89, 40, 12, 85, 35, 3, 78, 23, 45, 88, 49, 11, 19, 36, 35, 73];
 
 const buttonCheckNumber3 = document.getElementById("check-number-3");
@@ -86,3 +121,26 @@ function arrNumFunc(arr) {
 buttonCheckNumber3.addEventListener("click", function () {
     arrNumFunc(arrNum1)
 })
+
+// START
+const arrayOfNumber = [30, 80, 67, 2, 28, 57, 940, 29, 86, 93, 58, 2, 1039, 589, 34, 96, 192845, 98425];
+
+const buttonCheckNumber4 = document.getElementById("check-number-4");
+
+function checkArrayNumber(arrNum) {
+    if (arrNum.length === 0) {
+        return null;
+    };
+    let largest = arrNum[0];
+    setTimeout(() => console.log('largetArray', largest), 1000);
+    for (let i = 1; i < arrNum.length; i++) {
+        if (arrNum[i] > largest) {
+            largest = arrNum[i]
+        };
+    };
+    return largest;
+};
+
+buttonCheckNumber4.addEventListener("click", function () {
+    checkArrayNumber(arrayOfNumber);
+});
