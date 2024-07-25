@@ -82,6 +82,9 @@ const arrNumber = [1, 2, 3, 4, 5];
 const buttonCheckNumber = document.getElementById("check-number-1");
 
 buttonCheckNumber.addEventListener("click", function () {
+    if (arrNumber.length === 0) {
+        return null
+    }
     const largeNumber = Math.max(...arrNumber);
     console.log('large-number', largeNumber);
 });
