@@ -157,21 +157,11 @@ buttonCheckNumber4.addEventListener("click", function () {
 
 const inputVovel = document.getElementById("vovel");
 const buttonCheckVovel = document.getElementById("check-vovel");
-const vovelArr = ["a", "e", "i", "o", "u"];
+const vovelArr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 function checkVovelFunc(accVal) {
     if (vovelArr.length === 0) {
         return null;
-    };
-    const splitArr = accVal.split("");
-    splitArr.filter((item) => {
-        if(item === "a"){
-            console.log(true)
-        }
-    })
-    console.log(splitArr)
-    for (let i = 0; i < vovelArr.length; i++) {
-
     };
 };
 
