@@ -147,3 +147,35 @@ function checkArrayNumber(arrNum) {
 buttonCheckNumber4.addEventListener("click", function () {
     checkArrayNumber(arrayOfNumber);
 });
+
+
+/**
+ * CHECK VOVEL WORD JS PARACTICE
+ */
+
+// START
+
+const inputVovel = document.getElementById("vovel");
+const buttonCheckVovel = document.getElementById("check-vovel");
+const vovelArr = ["a", "e", "i", "o", "u"];
+
+function checkVovelFunc(accVal) {
+    if (vovelArr.length === 0) {
+        return null;
+    };
+    const splitArr = accVal.split("");
+    splitArr.filter((item) => {
+        if(item === "a"){
+            console.log(true)
+        }
+    })
+    console.log(splitArr)
+    for (let i = 0; i < vovelArr.length; i++) {
+
+    };
+};
+
+buttonCheckVovel.addEventListener("click", function () {
+    const acceptVal = inputVovel.value;
+    checkVovelFunc(acceptVal);
+});
