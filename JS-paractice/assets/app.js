@@ -163,6 +163,14 @@ function checkVovelFunc(accVal) {
     if (vovelArr.length === 0) {
         return null;
     };
+    let countVovel = "";
+    setTimeout(() => console.log(`Count Vovel ${countVovel}`), 1000);
+    for (let i = 0; i < accVal.length; i++) {
+        if (vovelArr.includes(accVal[i])) {
+            countVovel++
+        };
+    };
+    return countVovel;
 };
 
 buttonCheckVovel.addEventListener("click", function () {
