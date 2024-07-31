@@ -164,15 +164,46 @@ function checkVovelFunc(accVal) {
         return null;
     };
     let vovelCount = "";
+    setTimeout(() => console.log(`VovelCount-${vovelCount}`), 2000);
     for (let i = 0; i < accVal.length; i++) {
         if (vovelArr.includes(accVal[i])) {
             vovelCount++;
         };
     }
-    console.log(vovelCount)
+    return vovelCount;
 };
 
 buttonCheckVovel.addEventListener("click", function () {
     const acceptVal = inputVovel.value;
     checkVovelFunc(acceptVal);
+    inputVovel.value = "";
+});
+
+// START
+
+const userCheckField = document.getElementById("vovel-check");
+const userCheckButton = document.getElementById("check-vovel1");
+const vovelArrCheck = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+const checkVovelReduce = (userAccept) => {
+    if (vovelArrCheck.length === 0) {
+        return null;
+    };
+    const returnValue = userAccept.split("").reduce((prev, crunt) => {
+        if (vovelArrCheck.includes(crunt)) {
+            return prev + 1;
+        };
+        return prev
+    }, 0);
+    console.log(returnValue)
+};
+
+userCheckButton.addEventListener("click", () => {
+    const acceptUserField = userCheckField.value;
+    if (acceptUserField !== "") {
+        checkVovelReduce(acceptUserField);
+        userCheckField.value = "";
+    } else {
+        alert("Enter Input Field");
+    };
 });
