@@ -207,3 +207,30 @@ userCheckButton.addEventListener("click", () => {
         alert("Enter Input Field");
     };
 });
+
+// START
+const vowelCheck = document.getElementById("return-vowel");
+const vowelButton = document.getElementById("check-vowel2");
+const vowelArrCheck = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+function checkVowelFunc(accept) {
+    if (vowelArrCheck.length === 0) {
+        return null
+    };
+    const vowelCount = accept.split("").reduce((prev, current) => {
+        if (vowelArrCheck.includes(current)) {
+            return prev + current;
+        };
+        return prev;
+    }, "");
+    console.log(vowelCount);
+};
+
+vowelButton.addEventListener("click", () => {
+    const userVowel = vowelCheck.value;
+    if (userVowel !== "") {
+        checkVowelFunc(userVowel);
+    } else {
+        alert("Enter the Word");
+    };
+});
