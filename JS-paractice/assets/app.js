@@ -234,3 +234,16 @@ vowelButton.addEventListener("click", () => {
         alert("Enter the Word");
     };
 });
+
+// ARRAY FILTER NUMBER
+// START
+
+const numberOfArr = [1, 5, 6, 7, 8, 2, 2, 5, 6, 7, 8, 6, 4, 3, 10, 11, 22, 22, 11, 10, 34, 5, 3, 6, 7, 8, 1];
+
+function numberOfArrCheck(val) {
+    for (let i = 0; i < val.length; i++) { 
+        console.log(val)
+    };
+};
+
+const checkArr = numberOfArrCheck(numberOfArr);
