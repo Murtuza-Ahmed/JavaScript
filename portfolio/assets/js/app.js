@@ -1,4 +1,10 @@
-// "useStrict";
+"useStrict";
 
 const menuBars = document.getElementById("menu-bars");
-menuBars.addEventListener("click", () => console.log('click'))
+const topDiv = document.getElementById("top");
+const middleDiv = document.getElementById("middle");
+const bottomDiv = document.getElementById("bottom");
+
+menuBars.addEventListener("click", () => {
+    topDiv.style("display: none");
+});
